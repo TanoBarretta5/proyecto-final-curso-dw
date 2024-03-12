@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none ;
+    list-style: none;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* AQUI COMIENZA EL HEADER */
+
+header{
+    display: flex;
+    background-color: green;
+    color: white;
+    justify-content: space-between;
+    align-items: center;    
+    }
+
+.logo-protrain img {
+    padding: 4px;
+    height: 110px;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+}
+.palabras-nav li a{
+    color: white;
+    margin-right: 50px;
+    font-size: 24px;
+}
+
+.palabras-nav li a:hover{
+    color: black;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* AQUI COMIENZA EL BODY DE NOSOTROS */
+
+
+.nosotros-main{
+    background-image: url(../assets/img/PagNosotros/1c44b9a9297b6fad9057296490487cd5.jpg);
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.h1-fitness-h2-salud{
+    display: flex;
+    padding-left: 90px;
+}
+
+.h1-fitness-h2-salud h2{
+    writing-mode: vertical-lr;
+    font-size: 1.4rem;
+    padding-top: 125px;
+    margin-left: 50px;
+    letter-spacing: 10px;
+}
+
+.h1-fitness-h2-salud h1 {
+    font-size: 9rem;
+    text-shadow: 4px 4px 10px rgba(0, 201, 0, 0.586);
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.h2-salud{
+    transform: rotate(360deg);
+}
+
+.h2-entrena h2{
+    font-size: 1.8rem;
+    letter-spacing: 25px;
+    padding-left: 150px;
+}
+
+.div-button-empezar button  {
+    padding: 20px 40px;
+    background-color: green;
+    border-radius: 1rem;
+    border: 2px solid rgb(202, 255, 203);
+    box-shadow: .5rem .5rem 1rem rgb(202, 255, 203);
+    cursor: pointer;
+    margin-top: 250px;
+    margin-left: 300px;
+    
+}
+
+.button-empezar a{
+    font-size: 40px;
+    color: white;
+}
+
+
+
+/* AQUI COMIENZA EL BODI DE ENTRENAMIENTO */
+
+
+.entrenamiento-main{
+    width: 100%;
+}
+
+
+.h1-entrenamiento h1{
+    text-align: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.h2-tu h2{
+    color: green;
+    text-shadow: 5px 5px 0 white;
+    font-size: 120px;
+    text-align: center;
+}
+.div-contenedor-entrenamiento{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+}
+
+.section-entrenamiento1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.section-entrenamiento2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.section-entrenamiento3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.section-entrenamiento4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.titulo-entrenamiento {
+    font-size: 100px;
+    text-shadow: 5px 5px 0 green;
+}
+
+
+.titulo-gimnasio {
+    font-size: 50px;
+    text-shadow: 4px 4px 0 green;
+}
+
+.titulo-funcional {
+    font-size: 50px;
+    text-shadow: 4px 4px 0 green;
+}
+
+.titulo-stretching {
+    font-size: 50px;
+    text-shadow: 4px 4px 0 green;
+}
+
+.titulo-altorendimiento {
+    font-size: 50px;
+    text-shadow: 4px 4px 0 green;
+    
+}
+
+.p-gimasio {
+    font-size: 35px;
+    margin: 15px;
+    text-shadow: 0px 0px 30px green ;
+}
+
+.p-funcional {
+    font-size:35px;
+    margin: 15px;
+    text-shadow: 0px 0px 30px green ;
+}
+
+.p-stretching {
+    font-size: 35px;
+    margin: 15px;
+    text-shadow: 0px 0px 30px green ;
+}
+
+.p-altorendimiento {
+    font-size: 35px;
+    margin: 15px;
+    text-shadow: 0px 0px 30px green ;
+}
+
+.section-galeria-entrenamiento{
+    background-color: rgba(0, 255, 55, 0.143);
+    margin: px;
+}
+
+.div-h2-galeria{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-top:  30px;
+}
+.div-h2-galeria h2{
+    font-size: 4rem;
+    background-color: rgba(13, 255, 0, 0.703);
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px rgb(232, 255, 220);
+    padding: 12px;
+    text-shadow:4px 4px 10px rgb(0, 0, 0);
+    
+}
+
+.contenedor-galeria{
+    display: grid;
+    padding: 30px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8,180px);
+    grid-template-areas: 
+    "img-galeria1 img-galeria1 img-galeria2 img-galeria3"
+    "img-galeria1 img-galeria1 img-galeria2 img-galeria3"
+    "img-galeria1 img-galeria1 img-galeria8 img-galeria8"
+    "img-galeria5 img-galeria6 img-galeria8 img-galeria8"
+    "img-galeria5 img-galeria6 img-galeria8 img-galeria8"
+    "img-galeria4 img-galeria4 img-galeria8 img-galeria8"
+    "img-galeria4 img-galeria4 img-galeria7 img-galeria7"
+    "img-galeria4 img-galeria4 img-galeria7 img-galeria7"
+    
+    ;
+    gap: 10px;
+    
+}
+
+.contenedor-galeria img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+    
+
+
+.img-galeria1{
+    grid-area:img-galeria1 ;
+}
+
+.img-galeria2{
+    grid-area:img-galeria2 ;
+    }
+
+.img-galeria3{
+    grid-area: img-galeria3;
+}
+
+.img-galeria4{
+    grid-area:img-galeria4 ;
+}
+.img-galeria5{
+    grid-area:img-galeria5 ;
+}
+
+.img-galeria6{
+    grid-area:img-galeria6 ;
+}
+
+.img-galeria7{
+    grid-area:img-galeria7 ;
+}
+
+.img-galeria8{
+    grid-area:img-galeria8 ;
+}
+
+
+/* AQUI COMIENZA EL BODY DE NUTRICION  */
+
+.nutricion-main{
+    background-color: white;
+}
+
+.section-principal-nutricion div {
+    background-image: url(../assets/img/PagNutricion/Rectangle\ 32.png);
+    width: 100%;
+    height: 55rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.h1-nutricion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.h1-nutricion h1{
+    font-size: 80px;
+    width: 70rem;
+    height: 60%;
+    color: black;
+    text-shadow: 4px 4px 10px white;
+}
+
+.dieta{
+    color: red;
+    text-decoration:line-through;
+}
+
+.estilo-de-vida{
+    color: green;
+    text-shadow: 3px 3px 1px black;
+}
+
+
+.p-section2-nutricion div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.p-section2-nutricion div p{
+    color: black;
+    font-size: 3.3em;
+    margin: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 30px green;
+}
+
+.p-section2 p{
+    font-size: 55px;
+    color: black;
+}
+
+
+.planes-nutricionales{
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    padding: 50px;
+}
+.plan-carne-vegano img{
+    width: 80%;
+}
+.plan-carne-vegano h2{
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+    color: rgb(43, 255, 0);
+    margin-bottom: 10px;
+}
+
+.div-mas-info button{
+    background-color: rgb(14, 70, 22);
+    width: 300px;
+    height: 80px;
+    margin: 20px;
+}
+
+.div-mas-info button a{
+    font-size: 50px;
+    color: rgb(0, 255, 0);
+}
+
+
+/* AQUI COMIENZA EL BODY DE PLANES */
+
+
+
+
+.planes-main{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.section-elegi-planes{
+    width: 30%;
+    height: 100%;
+    margin: 50px;
+}
+
+.h1-nuestros-precios{
+    color: green;
+    font-size: 2.5rem;
+    margin: 30px;
+}
+
+.h2-elige-tu-plan{
+    font-size: 2.5rem;
+    margin: 30px;
+}
+
+.explicacion-planes p {
+    font-size: 40px;
+    margin: 30px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px green;
+    
+}
+
+.explicacion-planes h3{
+    font-size: 2.5em;
+    color: green;
+    margin: 10px;
+}
+
+.card-planes{
+    background-color: green;
+    margin: 20px;
+}
+
+.section-personalizados{
+    width: 28%;
+    height: 100%;
+}
+
+.tituloyprecios{
+    font-size: 2.3rem;
+    margin: 30px;
+    margin-top: 80px;
+}
+.tituloyprecios h3{
+    background-color: white;
+    margin: 5px;
+    color: black;
+}
+
+
+.personalizados ul li{  
+    font-size: 2.3em;
+    margin: 40px;
+    list-style:outside
+    
+}
+
+.button-contactanos button{
+    width: 20rem;
+    height: 4rem;
+    background-color: black;
+    margin: 5px;
+    font-size: 2.3rem;
+    border: 2px solid rgb(202, 255, 203);
+    cursor: pointer;
+}
+.button-contactanos button a{
+    color: white;
+    text-shadow: 3px 3px 10px green;
+}
+
+
+
+
+/* AQUI COMIENZA EL BODY DE CONTACTANOS */
+
+
+
+.contactanos-main{
+    background-image: url(../assets/img/PagContactanos/Rectangle\ 33\ \(1\).png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 50rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.h1-contactanos{
+    display: flex;
+    justify-content: center;
+}
+.h1-contactanos h1{
+    font-size: 5em;
+    margin: 50px;
+    color: rgb(0, 209, 0);
+    text-shadow: 2px 2px  white;
+}
+
+.section-contactanos  {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-left: 18em;
+    margin-top: 3.2em;
+}
+
+
+.form-contactanos{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    padding: 3em 3em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  rgb(0, 255, 0);
+    text-align: center;
+    max-width: 400px;
+}
+.form-title{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1em;
+    text-shadow:3px 3px 20px green ;
+}
+.form-parrafo{
+    font-weight: 300px;
+    color: black;
+}
+.form-parrafo a{
+    color: green;
+    text-decoration: underline;
+}
+.form-link{
+    font-weight: 400px;
+    color: black;
+}
+.form-container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2em;
+}
+.form-group{
+    position: relative;
+    --color: gray;
+}
+.form-input{
+    width: 100%;
+    background: none;
+    color: rgb(41, 41, 41);
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom:1px solid var(--color);
+}
+
+.form-input:focus + .form-label, 
+.form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color:rgb(0, 100, 0);
+}
+
+.form-label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, var(--color) .3s;
+}
+.form-submit{
+    background:green;
+    color: white;
+    font-weight: 300px;
+    font-size: 1rem;
+    padding: .8em 0px;
+    border: none;
+    border-radius: .5em;
+}
+.form-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: green;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+.form-input:focus ~ .form-line, 
+.form-input:not(:placeholder-shown) ~ .form-line{
+    transform: scale(1);
+}
+
+
+
+
+
+
+/* AQUI COMIENZA EL FOOTER */
+
+
+
+footer {
+    display: flex;
+    background-color: green;
+    color: white;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos-footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.ul-footer li a{
+    padding-right: 25px;
+}
+
+.ul-footer li a img{
+    height: 30px;
+}
+
+.img-telefono {
+    height: 30px;
+}
+
+.num-telefono {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/**AQUI COMIENZA LA MEDIA QUERY **/
+
+@media(max-width:1024px){
+    /* ACA COMIENZA EL HEADER EN 1024*/
+    header{ 
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    header nav{
+        text-align: center;
+        margin-left: 45px;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin: 5px;
+    }
+
+    /* ACA COMIENZA LA PAG NOSOTROS EN 1024px */
+    .h1-fitness-h2-salud{
+        padding-left: 40px;
+    }
+    .h1-fitness-h2-salud h1{
+        font-size: 5em;
+    }
+    .h1-fitness-h2-salud h2{
+        font-size: 0.8em;
+        letter-spacing: 5px;
+    }
+    .h2-entrena h2{
+        font-size: 1.2rem;
+        letter-spacing: 10px;
+        padding-left: 120px;
+        
+    }
+    .div-button-empezar button{
+        padding: 20px 40px;
+        margin-top: 250px;
+        margin-left: 100px;
+        
+    }
+}
+
+
+/* ACA COMIENZA LA MEDIA QUERY DE 768px */
+@media(max-width:768px){
+
+}
+
+
+/* ACA COMIENZA LA MEDIA QUERY DE 425px */
+@media (max-width:425px){
+    footer div p{
+        font-size: 8px;
+    }
+
+}
+
+
+/* ACA COMIENZA LA MEDIA QUERY DE 320px */
+@media(max-width:320px){
+
+}
