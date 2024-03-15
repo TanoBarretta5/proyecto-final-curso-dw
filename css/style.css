@@ -29,19 +29,36 @@ nav ul{
     display: flex;
 }
 .palabras-nav li a{
-    color: white;
+    color: rgb(255, 255, 255);
     margin-right: 50px;
-    font-size: 24px;
+    font-size: 24px;    
 }
 
 .palabras-nav li a:hover{
-    color: black;
+    color: rgb(0, 255, 34);
+}
+
+nav ul li .parado-en-pag{
+    color:rgb(60, 255, 34);
+    text-shadow: 2px 2px 2px black;
 }
 
 body {
     background-color: black;
-    color: white;
     font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+h1::selection{
+    background-color: rgba(0, 214, 0, 0.206);
+}
+h2::selection{
+    background-color: rgba(0, 214, 0, 0.206);
+}
+h3::selection{
+    background-color: rgba(0, 214, 0, 0.206);
+}
+p::selection{
+    background-color: rgba(0, 214, 0, 0.206);
 }
 
 
@@ -76,6 +93,12 @@ body {
     padding-left: 20px;
 }
 
+.h1-fitness-h2-salud h1:hover::after{
+    content: "💪🏻";
+    font-size: 60px;
+    margin-left: 10px;
+}
+
 .h2-salud{
     transform: rotate(360deg);
 }
@@ -97,7 +120,9 @@ body {
     margin-left: 300px;
     
 }
-
+.div-button-empezar button:hover{
+    background-color: rgb(0, 205, 10);
+}
 .button-empezar a{
     font-size: 40px;
     color: white;
@@ -425,6 +450,9 @@ body {
     background-color: green;
     margin-top: 60px;
 }
+.card-planes:hover{
+    background-color: rgb(0, 188, 0);
+}
 
 .section-personalizados{
     width: 32%;
@@ -442,14 +470,19 @@ body {
     color: black;
 }
 
-
+.personalizados ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .personalizados ul li{  
     font-size: 1.6em;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 40px;
     margin-bottom:40px ;
-    list-style:outside
-    
+}
+.personalizados ul li::marker{
+    content: "💪🏻";
 }
 
 .button-contactanos button{
@@ -489,7 +522,8 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 4em;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 50px;
     color: rgb(0, 209, 0);
     text-shadow: 2px 2px  white;
@@ -497,7 +531,7 @@ body {
 
 .div-mapa-form{
     display: flex;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .div-contenedor-iframe{
     display: flex;
@@ -815,6 +849,13 @@ footer {
 
 /* ACA COMIENZA LA MEDIA QUERY DE 768px */
 @media(max-width:768px){
+
+    /* ACA COMIENZA LA PAG DE NOSOTROS */
+    .h1-fitness-h2-salud h1:hover::after{
+        content: "💪🏻";
+        font-size: 30px;
+    }
+
 
     /* ACA COMIENZA LA PAG ENTRENAMIENTO */
     .h1-entrenamiento h1{
