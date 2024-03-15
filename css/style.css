@@ -531,7 +531,7 @@ p::selection{
 
 .div-mapa-form{
     display: flex;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .div-contenedor-iframe{
     display: flex;
@@ -832,14 +832,13 @@ footer {
     }
     .div-mapa-form{
         display: grid;
-        margin-bottom: 50px;
     }
     .div-contenedor-iframe{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-bottom: 50px;
+        
     }
     .div-contenedor-iframe iframe{
         width: 400px;
