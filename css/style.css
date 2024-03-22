@@ -10,37 +10,53 @@
 
 /* AQUI COMIENZA EL HEADER */
 
-header{
-    display: flex;
-    background-color: green;
-    color: white;
-    justify-content: space-between;
-    align-items: center;    
-    }
-
-.logo-protrain img {
-    padding: 4px;
-    height: 110px;
+.nav-wraper{
+    width: 100%;
+    margin: 0;
+    
 }
+
 nav{
     display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
 }
-nav ul{
+
+nav .logo-nav{
+    width:100px;
+    padding: 8px;
+}
+
+nav div ul{
     display: flex;
+    list-style: none;
+    gap: 25px;
 }
+
 .palabras-nav li a{
     color: rgb(255, 255, 255);
     margin-right: 50px;
-    font-size: 24px;    
+    font-size: 20px;    
 }
 
 .palabras-nav li a:hover{
-    color: rgb(0, 255, 34);
+    color: rgb(136, 255, 152);
 }
 
 nav ul li .parado-en-pag{
-    color:rgb(60, 255, 34);
+    color:rgb(30, 255, 0);
     text-shadow: 2px 2px 2px black;
+}
+
+header nav label{
+    padding-right: 20px;
+}
+
+nav #toggle, nav label{
+    display: none ;
 }
 
 body {
@@ -67,7 +83,7 @@ p::selection{
 
 .nosotros-main{
     background-image: url(../assets/img/PagNosotros/1c44b9a9297b6fad9057296490487cd5.jpg);
-    height: 50rem;
+    height: 51rem;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -435,6 +451,8 @@ p::selection{
 }
 
 .explicacion-planes p {
+    padding-right: 50px;
+    padding-left: 50px;
     font-size: 32px;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px green;
@@ -531,7 +549,7 @@ p::selection{
 
 .div-mapa-form{
     display: flex;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .div-contenedor-iframe{
     display: flex;
@@ -700,21 +718,31 @@ footer {
 /* ACA COMIENZA LA MEDIA 1024 */
 @media(max-width:1024px){
     /* ACA COMIENZA EL HEADER EN 1024*/
-    header{ 
-        justify-content: space-around;
+    .palabras-nav li a{
+        color: rgb(255, 255, 255);
+    }
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav div ul{
         flex-direction: column;
+        align-items: center;
+        padding: 8px 0;
     }
-    header nav{
-        text-align: center;
-        margin-left: 45px;
+    nav label{
+        display: inline-flex;
+        cursor: pointer;
     }
-    header nav ul{
-        flex-direction: column;
+    .palabras-nav li a{
+        margin-right:0px;  
     }
-    header nav ul li{
-        margin: 5px;
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+        background-color: rgba(0, 182, 24, 0.697);
     }
-
+    
     /* ACA COMIENZA LA PAG NOSOTROS */
     .h1-fitness-h2-salud{
         padding-left: 40px;
@@ -838,11 +866,11 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        
     }
     .div-contenedor-iframe iframe{
         width: 400px;
         height: 400px;
+        padding-bottom: 40px;
     }
 }
 
@@ -979,18 +1007,24 @@ footer {
             padding-left: 60px;
         }
 
+        /* ACA COMIENZA PAG CONTACTANOS */
+        .contactanos-main{
+            background-image: none;
+        }
 }
 
 /* ACA COMIENZA LA MEDIA QUERY DE 550px */
 @media(max-width:550px){
     /* ACA COMIENZA EL HEADER */
+    .nosotros-main{
+        height: 40rem;
+    }
     .logo-protrain img {
         padding: 4px;
         height: 80px;
     }
     .palabras-nav li a{
-        margin-right: 50px;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     /* ACA COMIENZA LA PAG  NOSOTROS */
@@ -1136,7 +1170,7 @@ footer {
 @media (max-width:425px){
     /* ACA COMIENZA LA PAG NOSOTROS */
     .nosotros-main{
-        height: 35rem;
+        height: 30rem;
     }
 
     .h1-fitness-h2-salud h1 {
