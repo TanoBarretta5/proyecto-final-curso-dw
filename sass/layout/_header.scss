@@ -1,0 +1,48 @@
+/*ACA COMIENZA EL HEADER*/
+
+
+.nav-wraper {
+    width: 100%;
+    margin: 0;
+    nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$fondo-verde;
+    color: white;
+    label {
+        padding-right: 20px;
+    }
+    .logo-nav {
+        width: 100px;
+        padding: 8px;
+        }
+    }
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    li {
+    a {
+        color: rgb(255, 255, 255);
+        margin-right: 50px;
+        font-size: 20px;
+        &:hover {
+        color: rgb(136, 255, 152);
+        }
+    }
+    .parado-en-pag {
+        color: rgb(30, 255, 0);
+        text-shadow: 2px 2px 2px black;
+        }
+    }
+}
+
+nav {
+    #toggle, label {
+    display: none;
+    }
+}

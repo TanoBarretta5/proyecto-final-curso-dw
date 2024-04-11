@@ -1,0 +1,626 @@
+/* ACA COMIENZA LA MEDIA DE 1440 */
+@media (max-width: 1440px) {
+    /* ACA COMIENZA LA PAG DE PLANES */
+
+    .h1-nuestros-precios,
+    .h2-elige-tu-plan{
+        font-size: 1.7rem;
+    }
+
+    .explicacion-planes {
+        h3 {
+            font-size: 1.8em;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+
+/* ACA COMIENZA LA PAG DE TIENDA */
+
+.suplementos-container{
+    grid-template-columns:repeat(2,300px);
+}
+
+.main-tienda h1{
+        font-size: 40px;
+    }
+
+}
+
+
+/* ACA COMIENZA LA MEDIA 1024 */
+@media (max-width: 1024px) {
+    /* ACA COMIENZA EL HEADER EN 1024*/
+
+    .menu ul li a {
+        color: rgb(255, 255, 255);
+        margin-right: 0px;
+    }
+
+    nav {
+        .menu {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        div ul {
+            flex-direction: column;
+            align-items: center;
+            padding: 8px 0;
+        }
+
+        label {
+            display: inline-flex;
+            cursor: pointer;
+        }
+
+        #toggle:checked~.menu {
+            height: 100%;
+            background-color: rgba(0, 182, 24, 0.697);
+        }
+    }
+
+    /* ACA COMIENZA LA PAG NOSOTROS */
+
+    .h1-fitness-h2-salud {
+        padding-left: 40px;
+
+        h1 {
+            font-size: 5em;
+        }
+
+        h2 {
+            font-size: 0.8em;
+            letter-spacing: 5px;
+        }
+    }
+
+    .h2-entrena h2 {
+        font-size: 1.2rem;
+        letter-spacing: 10px;
+        padding-left: 120px;
+    }
+
+    .div-button-empezar button {
+        padding: 20px 40px;
+        margin-top: 250px;
+        margin-left: 100px;
+    }
+
+    /* ACA COMIENZA LA PAG ENTRENAMIENTOS */
+
+    .h1-entrenamiento h1 {
+        font-size: 60px;
+        text-shadow: 3px 3px 0 $letras-verde;
+    }
+
+    .h2-tu h2 {
+        font-size: 80px;
+        text-shadow: 2px 2px 0 white;
+    }
+
+    .p-entrenamiento {
+        font-size: 14px;
+        
+    }
+
+    .div-pf-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px $letras-verde;
+            padding-top: 50px;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+            padding: 20px;
+        }
+    }
+
+    .div-contenedor-fotos{
+        flex-direction: column;
+    }
+
+    .div-contenedor-entrenamiento {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .div-h2-galeria h2 {
+        font-size: 2.5rem;
+    }
+
+    .logos-gym {
+        height: 55px;
+    }
+
+    .contenedor-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 180px);
+        grid-template-areas: "img-galeria1 img-galeria2 " "img-galeria1 img-galeria2 " "img-galeria5 img-galeria3 " "img-galeria5 img-galeria3 " "img-galeria6 img-galeria8 " "img-galeria6 img-galeria8 " "img-galeria6 img-galeria8 " "img-galeria4 img-galeria4 " "img-galeria4 img-galeria4 " "img-galeria7 img-galeria7 " "img-galeria7 img-galeria7 " "img-galeria7 img-galeria7 ";
+    }
+
+    /* AQUI COMIENZA LA PAG NUTRICION */
+
+    .h1-nutricion h1 {
+        font-size: 55px;
+        color: black;
+        text-shadow: 4px 4px 10px white;
+    }
+
+    .section-principal-nutricion div {
+        height: 50rem;
+    }
+
+    .p-section2-nutricion div p {
+        color: black;
+        font-size: 1.8em;
+        margin: 15px;
+    }
+
+    .div-mas-info button {
+        width: 200px;
+        height: 60px;
+
+        a {
+            font-size: 40px;
+        }
+    }
+
+
+    /**ACA COMIENZA LA MEDIA PARA TIENDA**/
+
+    .section-principal-suplementos{
+        .div-titulo-suplementos{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    /* ACA COMIENZA LA MEDIA PARA PLANES */
+
+    .planes-main {
+        display: grid;
+        height: 100%;
+    }
+
+    .section-elegi-planes {
+        width: auto;
+    }
+
+    .explicacion-planes p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .section-personalizados {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+
+    /* ACA COMIENZA LA PAG DE CONTACTANOS */
+
+    .h1-contactanos h1 {
+        font-size: 2.2em;
+    }
+
+    .div-mapa-form {
+        display: grid;
+    }
+
+    .div-contenedor-iframe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        iframe {
+            width: 400px;
+            height: 400px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+/* ACA COMIENZA LA MEDIA QUERY DE 768px */
+@media (max-width: 768px) {
+    /* ACA COMIENZA LA PAG DE NOSOTROS */
+
+    .h1-fitness-h2-salud h1:hover::after {
+        content: "💪🏻";
+        font-size: 30px;
+    }
+
+    /* ACA COMIENZA LA PAG ENTRENAMIENTO */
+
+    .h1-entrenamiento h1 {
+        font-size: 45px;
+    }
+
+    .h2-tu h2 {
+        font-size: 50px;
+        text-shadow: 2px 2px 0 white;
+    }
+
+    .titulo-entrenamiento {
+        font-size: 100px;
+        text-shadow: 5px 5px 0 green;
+    }
+
+    .logos-gym {
+        height: 55px;
+    }
+
+    .titulo-secundario-entrenamiento {
+        font-size: 35px;
+    }
+
+    .p-entrenamiento {
+        font-size: 14px;
+    }
+
+    .logos-gym {
+        height: 48px;
+    }
+
+    .contenedor-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(18, 120px);
+        grid-template-areas: "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria2 img-galeria3" "img-galeria2 img-galeria3" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria5 img-galeria6" "img-galeria5 img-galeria6" "img-galeria5 img-galeria6" "img-galeria7 img-galeria7" "img-galeria7 img-galeria7" "img-galeria7 img-galeria7" "img-galeria8 img-galeria8" "img-galeria8 img-galeria8" "img-galeria8 img-galeria8" "img-galeria8 img-galeria8";
+    }
+
+    /* ACA COMIENZA LA PAG DE NUTRICION */
+
+    .section-principal-nutricion div {
+        height: 40rem;
+    }
+
+    .h1-nutricion h1 {
+        font-size: 42px;
+        width: 72rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 200px;
+    }
+
+    .p-section2-nutricion div p {
+        font-size: 1.3em;
+        margin: 10px;
+    }
+
+    .planes-nutricionales {
+        display: grid;
+        text-align: center;
+        justify-content: space-around;
+        padding: 50px;
+    }
+
+    .plan-carne-vegano {
+        img {
+            width: 80%;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .div-mas-info button {
+        width: 260px;
+        height: 60px;
+        margin: 10px;
+        margin-bottom: 70px;
+
+        a {
+            font-size: 40px;
+        }
+    }
+
+
+
+     /* ACA COMIENZA LA PAG DE TIENDA */
+
+    .section-principal-suplementos{
+        flex-direction: column-reverse;
+        img{
+            width: 100%;
+        }
+        .div-titulo-suplementos{
+            width: 100%;
+            padding: 10px 10px 50px 10px;
+            h2{
+                padding-top: 20px;
+            }
+            p{
+                padding: 0 20px;
+            }
+        }
+    }
+    .suplementos-container{
+        grid-template-columns:repeat(1,240px);
+        gap: 10px;
+    }
+
+    
+    /* ACA COMIENZA LA PAG DE PLANES */
+
+    .explicacion-planes p {
+        font-size: 20px;
+    }
+
+    .section-personalizados {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+    /* ACA COMIENZA PAG CONTACTANOS */
+
+    .contactanos-main {
+        background-image: none;
+    }
+}
+
+/* ACA COMIENZA LA MEDIA QUERY DE 550px */
+@media (max-width: 550px) {
+    /* ACA COMIENZA EL HEADER */
+
+    .nosotros-main {
+        height: 40rem;
+    }
+
+    .logo-protrain img {
+        padding: 4px;
+        height: 80px;
+    }
+
+    .palabras-nav li a {
+        font-size: 20px;
+    }
+
+    /* ACA COMIENZA LA PAG  NOSOTROS */
+
+    .nosotros-main {
+        height: 38rem;
+    }
+
+    .h1-fitness-h2-salud {
+        h1 {
+            font-size: 4rem;
+            padding-left: 10px;
+        }
+
+        h2 {
+            font-size: 0.8rem;
+            padding-top: 110px;
+            margin-left: 30px;
+            letter-spacing: 5px;
+        }
+    }
+
+    .h2-entrena h2 {
+        font-size: 0.9rem;
+        letter-spacing: 10px;
+        padding-left: 90px;
+    }
+
+    .button-empezar a {
+        font-size: 20px;
+    }
+
+    /* ACA COMIENZA LA PAG ENTRENAMIENTO */
+
+    .section-entrenamiento {
+        margin: 5px;
+    }
+
+    .div-h2-galeria h2 {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .contenedor-galeria {
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(20, 45px);
+        grid-template-areas: "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria2 img-galeria3" "img-galeria2 img-galeria3" "img-galeria2 img-galeria3" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria6 img-galeria5" "img-galeria6 img-galeria5" "img-galeria6 img-galeria5" "img-galeria6 img-galeria5" "img-galeria8 img-galeria5" "img-galeria8 img-galeria5" "img-galeria8 img-galeria7" "img-galeria8 img-galeria7";
+    }
+
+    /* ACA COMIENZA LA PAG DE PLANES */
+
+    .h1-nuestros-precios {
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .h2-elige-tu-plan {
+        font-size: 1rem;
+    }
+
+    .explicacion-planes {
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .section-personalizados {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .tituloyprecios {
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+
+    .personalizados ul li {
+        font-size: 1.6em;
+    }
+
+    .button-contactanos button {
+        width: 10rem;
+        height: 3.5rem;
+        margin: 5px;
+        font-size: 1.5rem;
+    }
+
+    /* ACA COMIENZA LA PAG DE CONTACTANOS */
+
+    .contactanos-main {
+        background-image: none;
+    }
+
+    .h1-contactanos h1 {
+        font-size: 1.5em;
+    }
+
+    .div-contenedor-iframe iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+    .form-contactanos {
+        background-color: #fff;
+        margin: auto;
+        padding: 1em 1em;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(0, 255, 0);
+        text-align: center;
+        width: 290px;
+        height: 450px;
+    }
+}
+
+/* ACA COMIENZA LA MEDIA QUERY DE 425px */
+@media (max-width: 425px) {
+    /* ACA COMIENZA LA PAG NOSOTROS */
+
+    .nosotros-main {
+        height: 30rem;
+    }
+
+    .h1-fitness-h2-salud {
+        h1 {
+            font-size: 2.5rem;
+            padding-left: 10px;
+        }
+
+        h2 {
+            font-size: 0.5rem;
+            padding-top: 110px;
+            margin-left: 20px;
+            letter-spacing: 3px;
+        }
+    }
+
+    .h2-entrena h2 {
+        font-size: 0.5rem;
+        letter-spacing: 5px;
+        padding-left: 85px;
+    }
+
+    .div-button-empezar button {
+        padding: 15px 30px;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+
+    .button-empezar a {
+        font-size: 15px;
+    }
+
+    /* ACA COMIENZA EL FOOTER */
+
+    .ul-footer li a img,
+    .img-telefono {
+        height: 25px;
+    }
+
+    .num-telefono {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+
+    /* ACA COMIENZA LA PAG ENTRENAMIENTO */
+
+    .h1-entrenamiento h1 {
+        font-size: 20px;
+        text-shadow: 2px 2px 0 green;
+    }
+
+    .h2-tu h2 {
+        font-size: 20px;
+        text-shadow: 1px 1px 0 white;
+    }
+
+    .titulo-entrenamiento {
+        font-size: 100px;
+        text-shadow: 3px 3px 0 green;
+    }
+
+    .logos-gym {
+        height: 55px;
+    }
+
+    .titulo-secundario-entrenamiento {
+        font-size: 25px;
+        text-shadow: 2px 2px 0 green;
+    }
+
+    .p-entrenamiento {
+        font-size: 12px;
+    }
+
+    .logos-gym {
+        height: 35px;
+    }
+
+    /* ACA COMIENZA LA PAG DE NUTRICION */
+
+    .section-principal-nutricion div {
+        height: 30rem;
+    }
+
+    .h1-nutricion h1 {
+        font-size: 30px;
+        width: 72rem;
+        margin-top: 150px;
+    }
+
+    .p-section2-nutricion div p {
+        font-size: 1em;
+    }
+
+    .plan-carne-vegano h2 {
+        font-size: 2rem;
+    }
+
+    .div-mas-info button {
+        width: 180px;
+        height: 50px;
+
+        a {
+            font-size: 35px;
+        }
+    }
+}

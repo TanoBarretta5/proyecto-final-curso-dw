@@ -1,0 +1,22 @@
+/*ACA COMIENZA EL BODY Y GENERALES*/
+body {
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+h1::selection {
+    background-color: rgba(0, 214, 0, 0.206);
+}
+
+h2::selection {
+    background-color: rgba(0, 214, 0, 0.206);
+}
+
+h3::selection {
+    background-color: rgba(0, 214, 0, 0.206);
+}
+
+p::selection {
+    background-color: rgba(0, 214, 0, 0.206);
+}

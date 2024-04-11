@@ -1,1308 +1,1235 @@
+@charset "UTF-8";
+/***UTILITIES***/
+/***BASE***/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration:none ;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-/* AQUI COMIENZA EL HEADER */
-
-.nav-wraper{
-    width: 100%;
-    margin: 0;
-    
-}
-
-nav{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: green;
-    color: white;
-}
-
-nav .logo-nav{
-    width:100px;
-    padding: 8px;
-}
-
-nav div ul{
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-.palabras-nav li a{
-    color: rgb(255, 255, 255);
-    margin-right: 50px;
-    font-size: 20px;    
-}
-
-.palabras-nav li a:hover{
-    color: rgb(136, 255, 152);
-}
-
-nav ul li .parado-en-pag{
-    color:rgb(30, 255, 0);
-    text-shadow: 2px 2px 2px black;
-}
-
-header nav label{
-    padding-right: 20px;
-}
-
-nav #toggle, nav label{
-    display: none ;
-}
-
+/***COMPONENTS***/
+/***LAYOUT***/
+/*ACA COMIENZA EL BODY Y GENERALES*/
 body {
-    background-color: black;
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-}
-h1::selection{
-    background-color: rgba(0, 214, 0, 0.206);
-}
-h2::selection{
-    background-color: rgba(0, 214, 0, 0.206);
-}
-h3::selection{
-    background-color: rgba(0, 214, 0, 0.206);
-}
-p::selection{
-    background-color: rgba(0, 214, 0, 0.206);
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
 }
 
-
-/* AQUI COMIENZA EL BODY DE NOSOTROS */
-
-
-.nosotros-main{
-    background-image: url(../assets/img/PagNosotros/1c44b9a9297b6fad9057296490487cd5.jpg);
-    height: 51rem;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+h1::selection {
+  background-color: rgba(0, 214, 0, 0.206);
 }
 
-
-.h1-fitness-h2-salud{
-    display: flex;
-    padding-left: 90px;
+h2::selection {
+  background-color: rgba(0, 214, 0, 0.206);
 }
 
-.h1-fitness-h2-salud h2{
-    writing-mode: vertical-lr;
-    font-size: 1.4rem;
-    padding-top: 125px;
-    margin-left: 50px;
-    letter-spacing: 10px;
+h3::selection {
+  background-color: rgba(0, 214, 0, 0.206);
 }
 
+p::selection {
+  background-color: rgba(0, 214, 0, 0.206);
+}
+
+/*ACA COMIENZA EL HEADER*/
+.nav-wraper {
+  width: 100%;
+  margin: 0;
+}
+.nav-wraper nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 104, 0, 0.7098039216);
+  color: white;
+}
+.nav-wraper nav label {
+  padding-right: 20px;
+}
+.nav-wraper nav .logo-nav {
+  width: 100px;
+  padding: 8px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+.menu ul li a {
+  color: rgb(255, 255, 255);
+  margin-right: 50px;
+  font-size: 20px;
+}
+.menu ul li a:hover {
+  color: rgb(136, 255, 152);
+}
+.menu ul li .parado-en-pag {
+  color: rgb(30, 255, 0);
+  text-shadow: 2px 2px 2px black;
+}
+
+nav #toggle, nav label {
+  display: none;
+}
+
+/* AQUI COMIENZA EL MAIN DE NOSOTROS */
+.nosotros-main {
+  background-image: url(../assets/img/PagNosotros/1c44b9a9297b6fad9057296490487cd5.jpg);
+  height: 51rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.h1-fitness-h2-salud {
+  display: flex;
+  padding-left: 90px;
+}
+.h1-fitness-h2-salud h2 {
+  writing-mode: vertical-lr;
+  font-size: 1.4rem;
+  padding-top: 135px;
+  margin-left: 50px;
+  letter-spacing: 10px;
+}
 .h1-fitness-h2-salud h1 {
-    font-size: 9rem;
-    text-shadow: 4px 4px 10px rgba(0, 201, 0, 0.586);
-    padding-top: 100px;
-    padding-left: 20px;
+  font-size: 9rem;
+  text-shadow: 4px 4px 10px rgba(0, 201, 0, 0.586);
+  padding-top: 100px;
+  padding-left: 20px;
+}
+.h1-fitness-h2-salud h1:hover::after {
+  content: "💪🏻";
+  font-size: 60px;
+  margin-left: 10px;
 }
 
-.h1-fitness-h2-salud h1:hover::after{
-    content: "💪🏻";
-    font-size: 60px;
-    margin-left: 10px;
+.h2-salud {
+  transform: rotate(360deg);
 }
 
-.h2-salud{
-    transform: rotate(360deg);
+.h2-entrena h2 {
+  font-size: 1.8rem;
+  letter-spacing: 25px;
+  padding-left: 150px;
 }
 
-.h2-entrena h2{
-    font-size: 1.8rem;
-    letter-spacing: 25px;
-    padding-left: 150px;
+.div-button-empezar button {
+  padding: 20px 40px;
+  background-color: green;
+  border-radius: 1rem;
+  border: 2px solid rgb(202, 255, 203);
+  box-shadow: 0.5rem 0.5rem 1rem rgb(202, 255, 203);
+  cursor: pointer;
+  margin-top: 250px;
+  margin-left: 300px;
+}
+.div-button-empezar button:hover {
+  background-color: rgb(0, 205, 10);
 }
 
-.div-button-empezar button  {
-    padding: 20px 40px;
-    background-color: green;
-    border-radius: 1rem;
-    border: 2px solid rgb(202, 255, 203);
-    box-shadow: .5rem .5rem 1rem rgb(202, 255, 203);
-    cursor: pointer;
-    margin-top: 250px;
-    margin-left: 300px;
-    
-}
-.div-button-empezar button:hover{
-    background-color: rgb(0, 205, 10);
-}
-.button-empezar a{
-    font-size: 40px;
-    color: white;
+.button-empezar a {
+  font-size: 40px;
+  color: white;
 }
 
-
-
-/* AQUI COMIENZA EL BODI DE ENTRENAMIENTO */
-
-
-.entrenamiento-main{
-    width: 100%;
+/* AQUI COMIENZA EL MAIN DE ENTRENAMIENTO */
+.entrenamiento-main {
+  width: 100%;
 }
 
-
-.h1-entrenamiento h1{
-    text-align: center;
-    justify-content: center;
-    margin: 15px;
+.h1-entrenamiento h1 {
+  text-align: center;
+  justify-content: center;
+  margin: 15px;
+  font-size: 100px;
+  text-shadow: 5px 5px 0 green;
 }
 
-.titulo-gimnasio {
-    font-size: 50px;
-    text-shadow: 4px 4px 0 green;
+.h2-tu h2 {
+  color: green;
+  text-shadow: 5px 5px 0 white;
+  font-size: 120px;
+  text-align: center;
 }
 
-.h2-tu h2{
-    color: green;
-    text-shadow: 5px 5px 0 white;
-    font-size: 120px;
-    text-align: center;
+.div-contenedor-entrenamiento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  justify-content: center;
 }
-.div-contenedor-entrenamiento{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    justify-content: center;
-}
-
-.section-entrenamiento1{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 20px;
-    padding-top: 30px;
+.div-contenedor-entrenamiento .section-entrenamiento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
 
-.section-entrenamiento2{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 20px;
+.titulo-secundario-entrenamiento {
+  font-size: 50px;
+  text-shadow: 4px 4px 0 green;
 }
 
-.section-entrenamiento3{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 20px;
+.p-entrenamiento {
+  font-size: 16px;
+  margin: 15px;
+  text-shadow: 0px 0px 30px green;
 }
 
-.section-entrenamiento4{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 20px;
+.div-pf-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-pf-texto h2 {
+  font-size: 6rem;
+  text-shadow: 2px 2px 5px green;
+  padding-top: 50px;
+}
+.div-pf-texto hr {
+  width: 200px;
+  border: 1px solid rgba(0, 104, 0, 0.7098039216);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.div-pf-texto p {
+  font-size: 20px;
+  padding: 10px;
 }
 
-.titulo-entrenamiento {
-    font-size: 100px;
-    text-shadow: 5px 5px 0 green;
+.div-contenedor-fotos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.div-contenedor-fotos .div-pf-fotos {
+  padding: 20px;
+  text-align: center;
+}
+.div-contenedor-fotos .div-pf-fotos img {
+  width: 300px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+.div-contenedor-fotos .div-pf-fotos h3 {
+  text-align: center;
+  font-size: 25px;
 }
 
-
-.titulo-funcional {
-    font-size: 50px;
-    text-shadow: 4px 4px 0 green;
+.div-btn-pf {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.div-btn-pf .btn-pf {
+  text-align: center;
+  color: white;
+  background-color: rgb(0, 178, 0);
+  font-size: 30px;
+  width: 250px;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.titulo-stretching {
-    font-size: 50px;
-    text-shadow: 4px 4px 0 green;
+.section-galeria-entrenamiento {
+  background-color: rgba(4, 30, 0, 0.686);
 }
 
-.titulo-altorendimiento {
-    font-size: 50px;
-    text-shadow: 4px 4px 0 green;
-    
+.div-h2-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.div-h2-galeria h2 {
+  font-size: 4rem;
+  background-color: rgba(13, 255, 0, 0.703);
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px rgb(232, 255, 220);
+  padding: 12px;
+  text-shadow: 4px 4px 10px rgb(0, 0, 0);
 }
 
-.p-gimasio {
-    font-size: 35px;
-    margin: 15px;
-    text-shadow: 0px 0px 30px green ;
+.contenedor-galeria {
+  display: grid;
+  padding: 30px;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 180px);
+  grid-template-areas: "img-galeria1 img-galeria1 img-galeria2 img-galeria3" "img-galeria1 img-galeria1 img-galeria2 img-galeria3" "img-galeria1 img-galeria1 img-galeria8 img-galeria8" "img-galeria5 img-galeria6 img-galeria8 img-galeria8" "img-galeria5 img-galeria6 img-galeria8 img-galeria8" "img-galeria4 img-galeria4 img-galeria8 img-galeria8" "img-galeria4 img-galeria4 img-galeria7 img-galeria7" "img-galeria4 img-galeria4 img-galeria7 img-galeria7";
+  gap: 5px;
+}
+.contenedor-galeria img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
 }
 
-.p-funcional {
-    font-size:35px;
-    margin: 15px;
-    text-shadow: 0px 0px 30px green ;
+.img-galeria1 {
+  grid-area: img-galeria1;
 }
 
-.p-stretching {
-    font-size: 35px;
-    margin: 15px;
-    text-shadow: 0px 0px 30px green ;
+.img-galeria2 {
+  grid-area: img-galeria2;
 }
 
-.p-altorendimiento {
-    font-size: 35px;
-    margin: 15px;
-    text-shadow: 0px 0px 30px green ;
+.img-galeria3 {
+  grid-area: img-galeria3;
 }
 
-.section-galeria-entrenamiento{
-    background-color: rgba(0, 255, 55, 0.143);
+.img-galeria4 {
+  grid-area: img-galeria4;
 }
 
-.div-h2-galeria{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding-top:  30px;
-}
-.div-h2-galeria h2{
-    font-size: 4rem;
-    background-color: rgba(13, 255, 0, 0.703);
-    border-radius: 10px;
-    box-shadow: 4px 4px 20px rgb(232, 255, 220);
-    padding: 12px;
-    text-shadow:4px 4px 10px rgb(0, 0, 0);
-    
+.img-galeria5 {
+  grid-area: img-galeria5;
 }
 
-.contenedor-galeria{
-    display: grid;
-    padding: 30px;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8,180px);
-    grid-template-areas: 
-    "img-galeria1 img-galeria1 img-galeria2 img-galeria3"
-    "img-galeria1 img-galeria1 img-galeria2 img-galeria3"
-    "img-galeria1 img-galeria1 img-galeria8 img-galeria8"
-    "img-galeria5 img-galeria6 img-galeria8 img-galeria8"
-    "img-galeria5 img-galeria6 img-galeria8 img-galeria8"
-    "img-galeria4 img-galeria4 img-galeria8 img-galeria8"
-    "img-galeria4 img-galeria4 img-galeria7 img-galeria7"
-    "img-galeria4 img-galeria4 img-galeria7 img-galeria7"
-    
-    ;
-    gap: 5px;
-    
+.img-galeria6 {
+  grid-area: img-galeria6;
 }
 
-.contenedor-galeria img{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    object-fit: cover;
-}
-    
-
-
-.img-galeria1{
-    grid-area:img-galeria1 ;
+.img-galeria7 {
+  grid-area: img-galeria7;
 }
 
-.img-galeria2{
-    grid-area:img-galeria2 ;
-    }
-
-.img-galeria3{
-    grid-area: img-galeria3;
+.img-galeria8 {
+  grid-area: img-galeria8;
 }
 
-.img-galeria4{
-    grid-area:img-galeria4 ;
-}
-.img-galeria5{
-    grid-area:img-galeria5 ;
-}
-
-.img-galeria6{
-    grid-area:img-galeria6 ;
-}
-
-.img-galeria7{
-    grid-area:img-galeria7 ;
-}
-
-.img-galeria8{
-    grid-area:img-galeria8 ;
-}
-
-
-/* AQUI COMIENZA EL BODY DE NUTRICION  */
-
-.nutricion-main{
-    background-color: white;
+/* AQUI COMIENZA EL MAIN DE NUTRICION  */
+.nutricion-main {
+  background-color: white;
 }
 
 .section-principal-nutricion div {
-    background-image: url(../assets/img/PagNutricion/Rectangle\ 32.png);
-    width: 100%;
-    height: 56rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    
+  background-image: url(../assets/img/PagNutricion/frutas.png);
+  width: 100%;
+  height: 56rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
-.h1-nutricion{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.h1-nutricion {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.h1-nutricion h1 {
+  font-size: 75px;
+  width: 72rem;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 300px;
+  color: black;
+  text-shadow: 4px 4px 10px white;
 }
 
-.h1-nutricion h1{
-    font-size: 75px;
-    width: 72rem;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 300px;
-    color: black;
-    text-shadow: 4px 4px 10px white;
+.dieta {
+  color: red;
+  text-decoration: line-through;
 }
 
-.dieta{
-    color: red;
-    text-decoration:line-through;
+.estilo-de-vida {
+  color: green;
+  text-shadow: 3px 3px 1px black;
 }
-
-.estilo-de-vida{
-    color: green;
-    text-shadow: 3px 3px 1px black;
-}
-
 
 .p-section2-nutricion div {
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
-.p-section2-nutricion div p{
-    color: black;
-    font-size: 2.5em;
-    margin: 30px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 0px 0px 30px green;
-}
-
-.planes-nutricionales{
-    display: flex;
-    text-align: center;
-    justify-content:space-around;
-    padding: 50px;
-}
-.plan-carne-vegano img{
-    width: 80%;
-}
-.plan-carne-vegano h2{
-    font-size: 2rem;
-    text-shadow: 2px 2px black;
-    color: rgb(43, 255, 0);
-    margin-bottom: 10px;
+.p-section2-nutricion div p {
+  color: black;
+  font-size: 2.5em;
+  margin: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-shadow: 0px 0px 30px green;
 }
 
-.div-mas-info button{
-    background-color: rgb(14, 70, 22);
-    width: 300px;
-    height: 80px;
-    margin: 20px;
+.planes-nutricionales {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 50px;
 }
 
-.div-mas-info button a{
-    font-size: 50px;
-    color: rgb(0, 255, 0);
+.plan-carne-vegano img {
+  width: 80%;
+}
+.plan-carne-vegano h2 {
+  font-size: 2rem;
+  text-shadow: 2px 2px black;
+  color: rgb(43, 255, 0);
+  margin-bottom: 10px;
 }
 
+.div-mas-info button {
+  background-color: rgb(14, 70, 22);
+  width: 300px;
+  height: 80px;
+  margin: 20px;
+}
+.div-mas-info button a {
+  font-size: 50px;
+  color: rgb(0, 255, 0);
+}
+
+/** ACA COMIENZA EL MAIN DE TIENDA**/
+.main-tienda {
+  background-color: rgb(240, 240, 240);
+  color: rgb(0, 0, 0);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-bottom: 50px;
+}
+.main-tienda h1 {
+  text-align: center;
+  padding: 50px 0px;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  color: #044502;
+}
+
+.section-principal-suplementos {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.section-principal-suplementos img {
+  width: 50%;
+}
+.section-principal-suplementos .div-titulo-suplementos {
+  align-content: center;
+  width: 50%;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+.section-principal-suplementos .div-titulo-suplementos h2 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  color: rgb(0, 108, 0);
+  align-content: center;
+  padding-bottom: 50px;
+}
+.section-principal-suplementos .div-titulo-suplementos p {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.suplementos-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+.suplementos-container .suplemento-caja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding-bottom: 15px;
+}
+.suplementos-container .suplemento-caja:hover {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.202);
+  border-radius: 20px;
+}
+.suplementos-container .suplemento-caja img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.div-animacion {
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.suplemento-caja:hover img {
+  transform: scale(1.1);
+}
+
+.contenido-producto {
+  text-align: center;
+}
+.contenido-producto h2 {
+  padding-top: 5px;
+}
+.contenido-producto .calidad-premium {
+  margin: 3px 0;
+  font-size: 16px;
+}
+.contenido-producto .precio {
+  margin-bottom: 10px;
+  color: green;
+  font-size: 20px;
+}
+.contenido-producto .comprar {
+  margin: 10px 0;
+  padding: 6px 20px;
+  background-color: #06B300;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
 
 /* AQUI COMIENZA EL BODY DE PLANES */
-
-
-
-
-.planes-main{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
+.planes-main {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
 }
 
-.section-elegi-planes{
-    width:34%;
-    text-align: center;
+.section-elegi-planes {
+  width: 34%;
+  text-align: center;
 }
 
-.h1-nuestros-precios{
-    color: green;
-    font-size: 2.3rem;
-    margin-bottom: 10px;
-    margin-top: 40px;
+.h1-nuestros-precios {
+  color: green;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  margin-top: 40px;
 }
 
-.h2-elige-tu-plan{
-    font-size: 2rem;
-    margin-bottom: 10px;
+.h2-elige-tu-plan {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .explicacion-planes p {
-    padding-right: 50px;
-    padding-left: 50px;
-    font-size: 32px;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px green;
-    margin-top: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px green;
+  margin-top: 10px;
+}
+.explicacion-planes h3 {
+  font-size: 2.3em;
+  color: green;
 }
 
-.explicacion-planes h3{
-    font-size: 2.3em;
-    color: green;
+.card-planes {
+  background-color: green;
+  margin-top: 60px;
+}
+.card-planes:hover {
+  background-color: rgb(0, 188, 0);
 }
 
-.card-planes{
-    background-color: green;
-    margin-top: 60px;
-}
-.card-planes:hover{
-    background-color: rgb(0, 188, 0);
+.section-personalizados {
+  width: 32%;
+  height: 100%;
+  margin-bottom: 50px;
 }
 
-.section-personalizados{
-    width: 32%;
-    height: 100%;
-    margin-bottom: 50px;
+.tituloyprecios {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+.tituloyprecios h3 {
+  background-color: white;
+  margin-top: 20px;
+  color: black;
 }
 
-.tituloyprecios{
-    font-size: 1.6rem;
-    margin-top: 20px;
+.personalizados ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.tituloyprecios h3{
-    background-color: white;
-    margin-top: 20px;
-    color: black;
+.personalizados ul li {
+  font-size: 1.6em;
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-
-.personalizados ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.personalizados ul li{  
-    font-size: 1.6em;
-    margin-left: 50px;
-    margin-top: 40px;
-    margin-bottom:40px ;
-}
-.personalizados ul li::marker{
-    content: "💪🏻";
+.personalizados ul li::marker {
+  content: "💪🏻";
 }
 
-.button-contactanos button{
-    width: 15rem;
-    height: 4rem;
-    background-color: black;
-    margin: 5px;
-    font-size: 2.3rem;
-    border: 2px solid rgb(202, 255, 203);
-    cursor: pointer;
-    margin-bottom: 30px;
+.button-contactanos button {
+  width: 15rem;
+  height: 4rem;
+  background-color: black;
+  margin: 5px;
+  font-size: 2.3rem;
+  border: 2px solid rgb(202, 255, 203);
+  cursor: pointer;
+  margin-bottom: 30px;
 }
-.button-contactanos button a{
-    color: white;
-    text-shadow: 3px 3px 10px green;
-}
-
-
-
-
-/* AQUI COMIENZA EL BODY DE CONTACTANOS */
-
-
-
-.contactanos-main{
-    background-image: url(../assets/img/PagContactanos/Rectangle\ 33\ \(1\).png);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+.button-contactanos button a {
+  color: white;
+  text-shadow: 3px 3px 10px green;
 }
 
-
-.h1-contactanos h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4em;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-    color: rgb(0, 209, 0);
-    text-shadow: 2px 2px  white;
+/* AQUI COMIENZA EL MAIN DE CONTACTANOS */
+.contactanos-main {
+  background-image: url(../assets/img/PagContactanos/trineo.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.div-mapa-form{
-    display: flex;
-    padding-bottom: 50px;
-}
-.div-contenedor-iframe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-.div-contenedor-iframe iframe{
-    width: 400px;
-    height: 400px;
+.h1-contactanos h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  color: green;
+  text-shadow: 2px 2px white;
 }
 
-.form-contactanos{
-    background-color: #fff;
-    margin: auto;
-    padding: 3em 3em;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px  rgb(0, 255, 0);
-    text-align: center;
-    width:400px;
-    height: 480px;
-}
-.form-title{
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-    margin-bottom: 1em;
-    text-shadow:3px 3px 20px green ;
-}
-.form-parrafo{
-    font-weight: 300px;
-    color: black;
-}
-.form-parrafo a{
-    color: green;
-    text-decoration: underline;
-}
-.form-link{
-    font-weight: 400px;
-    color: black;
-}
-.form-container{
-    margin-top: 3em;
-    display: grid;
-    gap: 2em;
-}
-.form-group{
-    position: relative;
-    --color: gray;
-}
-.form-input{
-    width: 100%;
-    background: none;
-    color: rgb(41, 41, 41);
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom:1px solid var(--color);
+.div-mapa-form {
+  display: flex;
+  padding-bottom: 50px;
 }
 
-.form-input:focus + .form-label, 
-.form-input:not(:placeholder-shown) + .form-label{
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-    color:rgb(0, 100, 0);
+.div-contenedor-iframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.div-contenedor-iframe iframe {
+  width: 400px;
+  height: 400px;
 }
 
-.form-label{
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, var(--color) .3s;
-}
-.form-submit{
-    background:green;
-    color: white;
-    font-weight: 300px;
-    font-size: 1rem;
-    padding: .8em 0px;
-    border: none;
-    border-radius: .5em;
-}
-.form-line{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: green;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform .4s;
-}
-.form-input:focus ~ .form-line, 
-.form-input:not(:placeholder-shown) ~ .form-line{
-    transform: scale(1);
+.form-contactanos {
+  background-color: #fff;
+  margin: auto;
+  padding: 3em 3em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(0, 255, 0);
+  text-align: center;
+  width: 400px;
+  height: 480px;
 }
 
+.form-title {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1em;
+  text-shadow: 3px 3px 20px green;
+}
 
+.form-parrafo {
+  font-weight: 300px;
+  color: black;
+}
+.form-parrafo a {
+  color: green;
+  text-decoration: underline;
+}
 
+.form-link {
+  font-weight: 400px;
+  color: black;
+}
 
+.form-container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2em;
+}
 
+.form-group {
+  position: relative;
+  --color: gray;
+}
+
+.form-input {
+  width: 100%;
+  background: none;
+  color: rgb(41, 41, 41);
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+}
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: rgb(0, 100, 0);
+}
+
+.form-label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, var(--color) 0.3s;
+}
+
+.form-submit {
+  background: green;
+  color: white;
+  font-weight: 300px;
+  font-size: 1rem;
+  padding: 0.8em 0px;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.form-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: green;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
+}
+
+.form-input:focus ~ .form-line, .form-input:not(:placeholder-shown) ~ .form-line {
+  transform: scale(1);
+}
 
 /* AQUI COMIENZA EL FOOTER */
-
-
-
 footer {
-    display: flex;
-    background-color: green;
-    color: white;
-    height: 70px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  background-color: rgba(0, 104, 0, 0.7098039216);
+  color: white;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .num-telefono {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+footer .num-telefono .img-telefono {
+  height: 30px;
 }
 
-.logos-footer ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-
-.ul-footer li a{
-    padding-right: 25px;
+.logos-footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.ul-footer li a img{
-    height: 30px;
+.logos-footer ul li a {
+  padding-right: 25px;
 }
-
-.img-telefono {
-    height: 30px;
+.logos-footer ul li a img {
+  height: 30px;
 }
-
-.num-telefono{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-/**AQUI COMIENZA LA MEDIA QUERY **/
-
 
 /* ACA COMIENZA LA MEDIA DE 1440 */
-@media(max-width:1440px){
-
-    /* ACA COMIENZA LA PAG DE PLANES */
-    .h1-nuestros-precios{
-        font-size: 1.7rem;
-    }
-    .h2-elige-tu-plan{
-        font-size: 1.7rem;
-    }
-    .explicacion-planes h3{
-        font-size: 1.8em;
-    }
-    .explicacion-planes p {
-        font-size: 30px;
-    }
+@media (max-width: 1440px) {
+  /* ACA COMIENZA LA PAG DE PLANES */
+  .h1-nuestros-precios,
+  .h2-elige-tu-plan {
+    font-size: 1.7rem;
+  }
+  .explicacion-planes h3 {
+    font-size: 1.8em;
+  }
+  .explicacion-planes p {
+    font-size: 30px;
+  }
+  /* ACA COMIENZA LA PAG DE TIENDA */
+  .suplementos-container {
+    grid-template-columns: repeat(2, 300px);
+  }
+  .main-tienda h1 {
+    font-size: 40px;
+  }
 }
-
 /* ACA COMIENZA LA MEDIA 1024 */
-@media(max-width:1024px){
-    /* ACA COMIENZA EL HEADER EN 1024*/
-    .palabras-nav li a{
-        color: rgb(255, 255, 255);
-    }
-    nav .menu{
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    nav div ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 8px 0;
-    }
-    nav label{
-        display: inline-flex;
-        cursor: pointer;
-    }
-    .palabras-nav li a{
-        margin-right:0px;  
-    }
-    nav #toggle:checked ~ .menu{
-        height: 100%;
-        background-color: rgba(0, 182, 24, 0.697);
-    }
-    
-    /* ACA COMIENZA LA PAG NOSOTROS */
-    .h1-fitness-h2-salud{
-        padding-left: 40px;
-    }
-    .h1-fitness-h2-salud h1{
-        font-size: 5em;
-    }
-    .h1-fitness-h2-salud h2{
-        font-size: 0.8em;
-        letter-spacing: 5px;
-    }
-    .h2-entrena h2{
-        font-size: 1.2rem;
-        letter-spacing: 10px;
-        padding-left: 120px;
-        
-    }
-    .div-button-empezar button{
-        padding: 20px 40px;
-        margin-top: 250px;
-        margin-left: 100px;
-        
-    }
-
-    /* ACA COMIENZA LA PAG ENTRENAMIENTOS */
-    .h1-entrenamiento h1{
-        font-size: 60px;
-    }
-    .h2-tu h2{
-        font-size: 80px;
-    }
-
-    .div-contenedor-entrenamiento{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .div-h2-galeria h2{
-        font-size: 2.5rem;
-        
-    }
-    .logos-gym{
-        height: 55px;  
-    }
-    .contenedor-galeria{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(12,180px);
-        grid-template-areas: 
-        "img-galeria1 img-galeria2 "
-        "img-galeria1 img-galeria2 "
-        "img-galeria5 img-galeria3 "
-        "img-galeria5 img-galeria3 "
-        "img-galeria6 img-galeria8 "
-        "img-galeria6 img-galeria8 "
-        "img-galeria6 img-galeria8 "
-        "img-galeria4 img-galeria4 "
-        "img-galeria4 img-galeria4 "
-        "img-galeria7 img-galeria7 "
-        "img-galeria7 img-galeria7 "
-        "img-galeria7 img-galeria7 "
-        
-        ; 
-    }
-
-
-    /* AQUI COMIENZA LA PAG NUTRICION */
-    .h1-nutricion h1{
-        font-size: 55px;
-        color: black;
-        text-shadow: 4px 4px 10px white;
-    }
-    .section-principal-nutricion div {
-        background-image: url(../assets/img/PagNutricion/Rectangle\ 32.png);
-        height: 50rem;
-    }
-    .p-section2-nutricion div p{
-        color: black;
-        font-size: 1.8em;
-        margin: 15px;
-    }
-    .div-mas-info button{
-        width: 200px;
-        height: 60px;
-    }
-    
-    .div-mas-info button a{
-        font-size: 40px;
-    }
-
-    /* ACA COMIENZA LA MEDIA PARA PLANES */
-    .planes-main{
-        display: grid;
-        height: 100%;
-        
-    }
-    .section-elegi-planes{
-        width: auto;
-    }
-    .explicacion-planes p {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .section-personalizados{
-        width: 100%;
-        height: 100%;
-        margin-bottom: 50px;
-        padding-right:120px;
-        padding-left: 120px;
-    }
-
-
-    /* ACA COMIENZA LA PAG DE CONTACTANOS */
-    .h1-contactanos h1{
-        font-size: 2.2em;
-    }
-    .div-mapa-form{
-        display: grid;
-    }
-    .div-contenedor-iframe{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .div-contenedor-iframe iframe{
-        width: 400px;
-        height: 400px;
-        padding-bottom: 40px;
-    }
+@media (max-width: 1024px) {
+  /* ACA COMIENZA EL HEADER EN 1024*/
+  .menu ul li a {
+    color: rgb(255, 255, 255);
+    margin-right: 0px;
+  }
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  nav div ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+  }
+  nav label {
+    display: inline-flex;
+    cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+    background-color: rgba(0, 182, 24, 0.697);
+  }
+  /* ACA COMIENZA LA PAG NOSOTROS */
+  .h1-fitness-h2-salud {
+    padding-left: 40px;
+  }
+  .h1-fitness-h2-salud h1 {
+    font-size: 5em;
+  }
+  .h1-fitness-h2-salud h2 {
+    font-size: 0.8em;
+    letter-spacing: 5px;
+  }
+  .h2-entrena h2 {
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    padding-left: 120px;
+  }
+  .div-button-empezar button {
+    padding: 20px 40px;
+    margin-top: 250px;
+    margin-left: 100px;
+  }
+  /* ACA COMIENZA LA PAG ENTRENAMIENTOS */
+  .h1-entrenamiento h1 {
+    font-size: 60px;
+    text-shadow: 3px 3px 0 green;
+  }
+  .h2-tu h2 {
+    font-size: 80px;
+    text-shadow: 2px 2px 0 white;
+  }
+  .p-entrenamiento {
+    font-size: 14px;
+  }
+  .div-pf-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-pf-texto h2 {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px green;
+    padding-top: 50px;
+  }
+  .div-pf-texto p {
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+  }
+  .div-contenedor-fotos {
+    flex-direction: column;
+  }
+  .div-contenedor-entrenamiento {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .div-h2-galeria h2 {
+    font-size: 2.5rem;
+  }
+  .logos-gym {
+    height: 55px;
+  }
+  .contenedor-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 180px);
+    grid-template-areas: "img-galeria1 img-galeria2 " "img-galeria1 img-galeria2 " "img-galeria5 img-galeria3 " "img-galeria5 img-galeria3 " "img-galeria6 img-galeria8 " "img-galeria6 img-galeria8 " "img-galeria6 img-galeria8 " "img-galeria4 img-galeria4 " "img-galeria4 img-galeria4 " "img-galeria7 img-galeria7 " "img-galeria7 img-galeria7 " "img-galeria7 img-galeria7 ";
+  }
+  /* AQUI COMIENZA LA PAG NUTRICION */
+  .h1-nutricion h1 {
+    font-size: 55px;
+    color: black;
+    text-shadow: 4px 4px 10px white;
+  }
+  .section-principal-nutricion div {
+    height: 50rem;
+  }
+  .p-section2-nutricion div p {
+    color: black;
+    font-size: 1.8em;
+    margin: 15px;
+  }
+  .div-mas-info button {
+    width: 200px;
+    height: 60px;
+  }
+  .div-mas-info button a {
+    font-size: 40px;
+  }
+  /**ACA COMIENZA LA MEDIA PARA TIENDA**/
+  .section-principal-suplementos .div-titulo-suplementos h2 {
+    font-size: 20px;
+  }
+  .section-principal-suplementos .div-titulo-suplementos p {
+    font-size: 16px;
+  }
+  /* ACA COMIENZA LA MEDIA PARA PLANES */
+  .planes-main {
+    display: grid;
+    height: 100%;
+  }
+  .section-elegi-planes {
+    width: auto;
+  }
+  .explicacion-planes p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .section-personalizados {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+  /* ACA COMIENZA LA PAG DE CONTACTANOS */
+  .h1-contactanos h1 {
+    font-size: 2.2em;
+  }
+  .div-mapa-form {
+    display: grid;
+  }
+  .div-contenedor-iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .div-contenedor-iframe iframe {
+    width: 400px;
+    height: 400px;
+    padding-bottom: 40px;
+  }
 }
-
 /* ACA COMIENZA LA MEDIA QUERY DE 768px */
-@media(max-width:768px){
-
-    /* ACA COMIENZA LA PAG DE NOSOTROS */
-    .h1-fitness-h2-salud h1:hover::after{
-        content: "💪🏻";
-        font-size: 30px;
-    }
-
-
-    /* ACA COMIENZA LA PAG ENTRENAMIENTO */
-    .h1-entrenamiento h1{
-        font-size: 45px;
-    }
-    .h2-tu h2{
-        font-size: 60px;
-    }
-    .titulo-entrenamiento {
-        font-size: 100px;
-        text-shadow: 5px 5px 0 green;
-    }
-
-    .logos-gym{
-        height: 55px;  
-    }
-    .titulo-gimnasio {
-        font-size: 35px;
-    }
-    .titulo-funcional {
-        font-size: 35px;
-    }
-    
-    .titulo-stretching {
-        font-size: 35px;
-        
-    }
-    .titulo-altorendimiento{
-        font-size: 35px;
-    }
-    
-    .p-gimasio {
-        font-size: 23px;
-    }
-    
-    .p-funcional {
-        font-size:23px;
-    }
-    
-    .p-stretching {
-        font-size: 23px;
-    }
-    
-    .p-altorendimiento {
-        font-size: 23px;
-        }
-        .logos-gym{
-            height: 48px;  
-        }
-        .contenedor-galeria{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(18,120px);
-            grid-template-areas: 
-            "img-galeria1 img-galeria1"
-            "img-galeria1 img-galeria1"
-            "img-galeria1 img-galeria1"
-            "img-galeria2 img-galeria3"
-            "img-galeria2 img-galeria3"
-            "img-galeria4 img-galeria4"
-            "img-galeria4 img-galeria4"
-            "img-galeria4 img-galeria4"
-            "img-galeria5 img-galeria6"
-            "img-galeria5 img-galeria6"
-            "img-galeria5 img-galeria6"
-            "img-galeria7 img-galeria7"
-            "img-galeria7 img-galeria7"
-            "img-galeria7 img-galeria7"
-            "img-galeria8 img-galeria8"
-            "img-galeria8 img-galeria8"
-            "img-galeria8 img-galeria8"
-            "img-galeria8 img-galeria8"
-            ; 
-        }
-
-        /* ACA COMIENZA LA PAG DE NUTRICION */
-        .section-principal-nutricion div {
-            height: 40rem;
-        }
-        .h1-nutricion h1{
-            font-size: 42px;
-            width: 72rem;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 200px;
-            
-        }
-        .p-section2-nutricion div p{
-            font-size: 1.3em;
-            margin: 10px;
-        }
-        .planes-nutricionales{
-            display: grid;
-            text-align: center;
-            justify-content:space-around;
-            padding: 50px;
-        }
-        .plan-carne-vegano img{
-            width: 80%;
-        }
-        .plan-carne-vegano h2{
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .div-mas-info button{
-            width: 260px;
-            height: 60px;
-            margin: 10px;
-            margin-bottom: 70px;
-        }
-        
-        .div-mas-info button a{
-            font-size: 40px;
-        }
-
-        /* ACA COMIENZA LA PAG DE PLANES */
-        .explicacion-planes p {
-            font-size: 20px;
-        }
-        .section-personalizados{
-            padding-right:60px;
-            padding-left: 60px;
-        }
-
-        /* ACA COMIENZA PAG CONTACTANOS */
-        .contactanos-main{
-            background-image: none;
-        }
+@media (max-width: 768px) {
+  /* ACA COMIENZA LA PAG DE NOSOTROS */
+  .h1-fitness-h2-salud h1:hover::after {
+    content: "💪🏻";
+    font-size: 30px;
+  }
+  /* ACA COMIENZA LA PAG ENTRENAMIENTO */
+  .h1-entrenamiento h1 {
+    font-size: 45px;
+  }
+  .h2-tu h2 {
+    font-size: 50px;
+    text-shadow: 2px 2px 0 white;
+  }
+  .titulo-entrenamiento {
+    font-size: 100px;
+    text-shadow: 5px 5px 0 green;
+  }
+  .logos-gym {
+    height: 55px;
+  }
+  .titulo-secundario-entrenamiento {
+    font-size: 35px;
+  }
+  .p-entrenamiento {
+    font-size: 14px;
+  }
+  .logos-gym {
+    height: 48px;
+  }
+  .contenedor-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(18, 120px);
+    grid-template-areas: "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria2 img-galeria3" "img-galeria2 img-galeria3" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria5 img-galeria6" "img-galeria5 img-galeria6" "img-galeria5 img-galeria6" "img-galeria7 img-galeria7" "img-galeria7 img-galeria7" "img-galeria7 img-galeria7" "img-galeria8 img-galeria8" "img-galeria8 img-galeria8" "img-galeria8 img-galeria8" "img-galeria8 img-galeria8";
+  }
+  /* ACA COMIENZA LA PAG DE NUTRICION */
+  .section-principal-nutricion div {
+    height: 40rem;
+  }
+  .h1-nutricion h1 {
+    font-size: 42px;
+    width: 72rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 200px;
+  }
+  .p-section2-nutricion div p {
+    font-size: 1.3em;
+    margin: 10px;
+  }
+  .planes-nutricionales {
+    display: grid;
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  .plan-carne-vegano img {
+    width: 80%;
+  }
+  .plan-carne-vegano h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .div-mas-info button {
+    width: 260px;
+    height: 60px;
+    margin: 10px;
+    margin-bottom: 70px;
+  }
+  .div-mas-info button a {
+    font-size: 40px;
+  }
+  /* ACA COMIENZA LA PAG DE TIENDA */
+  .section-principal-suplementos {
+    flex-direction: column-reverse;
+  }
+  .section-principal-suplementos img {
+    width: 100%;
+  }
+  .section-principal-suplementos .div-titulo-suplementos {
+    width: 100%;
+    padding: 10px 10px 50px 10px;
+  }
+  .section-principal-suplementos .div-titulo-suplementos h2 {
+    padding-top: 20px;
+  }
+  .section-principal-suplementos .div-titulo-suplementos p {
+    padding: 0 20px;
+  }
+  .suplementos-container {
+    grid-template-columns: repeat(1, 240px);
+    gap: 10px;
+  }
+  /* ACA COMIENZA LA PAG DE PLANES */
+  .explicacion-planes p {
+    font-size: 20px;
+  }
+  .section-personalizados {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  /* ACA COMIENZA PAG CONTACTANOS */
+  .contactanos-main {
+    background-image: none;
+  }
 }
-
 /* ACA COMIENZA LA MEDIA QUERY DE 550px */
-@media(max-width:550px){
-    /* ACA COMIENZA EL HEADER */
-    .nosotros-main{
-        height: 40rem;
-    }
-    .logo-protrain img {
-        padding: 4px;
-        height: 80px;
-    }
-    .palabras-nav li a{
-        font-size: 20px;
-    }
-
-    /* ACA COMIENZA LA PAG  NOSOTROS */
-    .nosotros-main{
-        height: 38rem;
-    }
-    .h1-fitness-h2-salud h1 {
-        font-size: 4rem;
-        padding-left: 10px;
-    }
-
-    .h1-fitness-h2-salud h2{
-        font-size: 0.8rem;
-        padding-top: 110px;
-        margin-left: 30px;
-        letter-spacing: 5px;
-    }
-
-    .h2-entrena h2{
-        font-size: 0.9rem;
-        letter-spacing: 10px;
-        padding-left: 90px;
-    }
-
-    .button-empezar a{
-        font-size: 20px;
-    }
-
-    /* ACA COMIENZA LA PAG ENTRENAMIENTO */
-    .section-entrenamiento1{
-        margin: 5px;
-        
-    }
-    
-    .section-entrenamiento2{
-        margin: 5px;
-    }
-    
-    .section-entrenamiento3{
-        margin: 5px;
-    }
-    
-    .section-entrenamiento4{
-        margin: 5px;
-    }
-
-    .div-h2-galeria h2{
-        font-size: 1.4rem;
-        padding: 10px;
-    }
-
-    .contenedor-galeria{
-        padding: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(20,45px);
-        grid-template-areas: 
-        "img-galeria1 img-galeria1"
-        "img-galeria1 img-galeria1"
-        "img-galeria1 img-galeria1"
-        "img-galeria1 img-galeria1"
-        "img-galeria2 img-galeria3"
-        "img-galeria2 img-galeria3"
-        "img-galeria2 img-galeria3"
-        "img-galeria4 img-galeria4"
-        "img-galeria4 img-galeria4"
-        "img-galeria4 img-galeria4"
-        "img-galeria4 img-galeria4"
-        "img-galeria4 img-galeria4"
-        "img-galeria6 img-galeria5"
-        "img-galeria6 img-galeria5"
-        "img-galeria6 img-galeria5"
-        "img-galeria6 img-galeria5"
-        "img-galeria8 img-galeria5"
-        "img-galeria8 img-galeria5"
-        "img-galeria8 img-galeria7"
-        "img-galeria8 img-galeria7"
-        
-        ; 
-    }
-
-    /* ACA COMIENZA LA PAG DE PLANES */
-    .h1-nuestros-precios{
-        font-size: 1rem;
-        width:auto;
-    }
-    
-    .h2-elige-tu-plan{
-        font-size: 1rem;
-    }
-    .explicacion-planes h3{
-        font-size: 1rem;
-    }
-    .explicacion-planes p {
-        font-size: 15px;
-    }
-    .section-personalizados{
-        padding-right:10px;
-        padding-left: 10px;
-    }
-    .tituloyprecios{
-        font-size: 1.6rem;
-        margin-top: 20px;
-    }
-    .personalizados ul li{  
-        font-size: 1.6em;
-        
-    }
-    
-    .button-contactanos button{
-        width: 10rem;
-        height: 3.5rem;
-        margin: 5px;
-        font-size: 1.5rem;
-    }
-    
-
-    /* ACA COMIENZA LA PAG DE CONTACTANOS */
-    .contactanos-main{
-        background-image:none;
-    }
-    .h1-contactanos h1{
-        font-size: 1.5em;
-    }
-    .div-contenedor-iframe iframe{
-        width: 250px;
-        height:250px;
-    }
-    
-    .form-contactanos{
-        background-color: #fff;
-        margin: auto;
-        padding: 1em 1em;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px  rgb(0, 255, 0);
-        text-align: center;
-        width:290px;
-        height: 450px;
-    }
+@media (max-width: 550px) {
+  /* ACA COMIENZA EL HEADER */
+  .nosotros-main {
+    height: 40rem;
+  }
+  .logo-protrain img {
+    padding: 4px;
+    height: 80px;
+  }
+  .palabras-nav li a {
+    font-size: 20px;
+  }
+  /* ACA COMIENZA LA PAG  NOSOTROS */
+  .nosotros-main {
+    height: 38rem;
+  }
+  .h1-fitness-h2-salud h1 {
+    font-size: 4rem;
+    padding-left: 10px;
+  }
+  .h1-fitness-h2-salud h2 {
+    font-size: 0.8rem;
+    padding-top: 110px;
+    margin-left: 30px;
+    letter-spacing: 5px;
+  }
+  .h2-entrena h2 {
+    font-size: 0.9rem;
+    letter-spacing: 10px;
+    padding-left: 90px;
+  }
+  .button-empezar a {
+    font-size: 20px;
+  }
+  /* ACA COMIENZA LA PAG ENTRENAMIENTO */
+  .section-entrenamiento {
+    margin: 5px;
+  }
+  .div-h2-galeria h2 {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+  .contenedor-galeria {
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(20, 45px);
+    grid-template-areas: "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria1 img-galeria1" "img-galeria2 img-galeria3" "img-galeria2 img-galeria3" "img-galeria2 img-galeria3" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria4 img-galeria4" "img-galeria6 img-galeria5" "img-galeria6 img-galeria5" "img-galeria6 img-galeria5" "img-galeria6 img-galeria5" "img-galeria8 img-galeria5" "img-galeria8 img-galeria5" "img-galeria8 img-galeria7" "img-galeria8 img-galeria7";
+  }
+  /* ACA COMIENZA LA PAG DE PLANES */
+  .h1-nuestros-precios {
+    font-size: 1rem;
+    width: auto;
+  }
+  .h2-elige-tu-plan {
+    font-size: 1rem;
+  }
+  .explicacion-planes h3 {
+    font-size: 1rem;
+  }
+  .explicacion-planes p {
+    font-size: 15px;
+  }
+  .section-personalizados {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .tituloyprecios {
+    font-size: 1.6rem;
+    margin-top: 20px;
+  }
+  .personalizados ul li {
+    font-size: 1.6em;
+  }
+  .button-contactanos button {
+    width: 10rem;
+    height: 3.5rem;
+    margin: 5px;
+    font-size: 1.5rem;
+  }
+  /* ACA COMIENZA LA PAG DE CONTACTANOS */
+  .contactanos-main {
+    background-image: none;
+  }
+  .h1-contactanos h1 {
+    font-size: 1.5em;
+  }
+  .div-contenedor-iframe iframe {
+    width: 250px;
+    height: 250px;
+  }
+  .form-contactanos {
+    background-color: #fff;
+    margin: auto;
+    padding: 1em 1em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 255, 0);
+    text-align: center;
+    width: 290px;
+    height: 450px;
+  }
 }
-
-
 /* ACA COMIENZA LA MEDIA QUERY DE 425px */
-@media (max-width:425px){
-    /* ACA COMIENZA LA PAG NOSOTROS */
-    .nosotros-main{
-        height: 30rem;
-    }
-
-    .h1-fitness-h2-salud h1 {
-        font-size: 2.5rem;
-        padding-left: 10px;
-    }
-
-    .h1-fitness-h2-salud h2{
-        font-size: 0.5rem;
-        padding-top: 110px;
-        margin-left: 20px;
-        letter-spacing: 3px;
-    }
-
-    .h2-entrena h2{
-        font-size: 0.5rem;
-        letter-spacing: 5px;
-        padding-left: 85px;
-    }
-
-    .div-button-empezar button  {
-        padding: 15px 30px;
-        margin-top: 150px;
-        margin-left: 50px;
-    }
-    .button-empezar a{
-        font-size: 15px;
-    }
-
-
-    /* ACA COMIENZA EL FOOTER */
-    .ul-footer li a img{
-        height: 25px;
-    }
-    .img-telefono {
-        height: 25px;
-    }
-    .num-telefono {
-        padding: 5px;
-        font-size: 0.7rem;
-    }
-
-    /* ACA COMIENZA LA PAG ENTRENAMIENTO */
-    .h1-entrenamiento h1{
-        font-size: 30px;
-    }
-    .h2-tu h2{
-        font-size: 40px;
-        text-shadow: 3px 3px 0 white;
-    }
-    .titulo-entrenamiento {
-        font-size: 100px;
-        text-shadow: 3px 3px 0 green;
-    }
-    .logos-gym{
-        height: 55px;  
-    }
-    
-    .titulo-gimnasio {
-        font-size: 25px;
-        text-shadow: 2px 2px 0 green;
-    }
-    
-    .titulo-funcional {
-        font-size: 25px;
-        text-shadow: 2px 2px 0 green;
-    }
-    
-    .titulo-stretching {
-        font-size: 25px;
-        text-shadow: 2px 2px 0 green;
-    }
-    
-    .titulo-altorendimiento {
-        font-size: 25px;
-        text-shadow: 2px 2px 0 green;
-    }
-    
-    .p-gimasio {
-        font-size: 16px;
-        
-    }
-    
-    .p-funcional {
-        font-size:16px;
-        
-    }
-    
-    .p-stretching {
-        font-size: 16px;
-        
-    }
-    
-    .p-altorendimiento {
-        font-size: 16px;
-        
-        }
-        .logos-gym{
-            height: 35px;  
-        }
-
-
-        /* ACA COMIENZA LA PAG DE NUTRICION */
-        .section-principal-nutricion div {
-            background-image: url(../assets/img/PagNutricion/Rectangle\ 32.png);
-            height: 30rem;
-        }
-        .h1-nutricion h1{
-            font-size: 30px;
-            width: 72rem;
-            margin-top: 150px;
-            
-        }
-        .p-section2-nutricion div p{
-            font-size: 1em;
-        }
-        .plan-carne-vegano h2{
-            font-size: 2rem;
-        }
-        
-        .div-mas-info button{
-            width: 220px;
-            height: 50px;
-        }
-        
-        .div-mas-info button a{
-            font-size: 35px;
-        }
+@media (max-width: 425px) {
+  /* ACA COMIENZA LA PAG NOSOTROS */
+  .nosotros-main {
+    height: 30rem;
+  }
+  .h1-fitness-h2-salud h1 {
+    font-size: 2.5rem;
+    padding-left: 10px;
+  }
+  .h1-fitness-h2-salud h2 {
+    font-size: 0.5rem;
+    padding-top: 110px;
+    margin-left: 20px;
+    letter-spacing: 3px;
+  }
+  .h2-entrena h2 {
+    font-size: 0.5rem;
+    letter-spacing: 5px;
+    padding-left: 85px;
+  }
+  .div-button-empezar button {
+    padding: 15px 30px;
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+  .button-empezar a {
+    font-size: 15px;
+  }
+  /* ACA COMIENZA EL FOOTER */
+  .ul-footer li a img,
+  .img-telefono {
+    height: 25px;
+  }
+  .num-telefono {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+  /* ACA COMIENZA LA PAG ENTRENAMIENTO */
+  .h1-entrenamiento h1 {
+    font-size: 20px;
+    text-shadow: 2px 2px 0 green;
+  }
+  .h2-tu h2 {
+    font-size: 20px;
+    text-shadow: 1px 1px 0 white;
+  }
+  .titulo-entrenamiento {
+    font-size: 100px;
+    text-shadow: 3px 3px 0 green;
+  }
+  .logos-gym {
+    height: 55px;
+  }
+  .titulo-secundario-entrenamiento {
+    font-size: 25px;
+    text-shadow: 2px 2px 0 green;
+  }
+  .p-entrenamiento {
+    font-size: 12px;
+  }
+  .logos-gym {
+    height: 35px;
+  }
+  /* ACA COMIENZA LA PAG DE NUTRICION */
+  .section-principal-nutricion div {
+    height: 30rem;
+  }
+  .h1-nutricion h1 {
+    font-size: 30px;
+    width: 72rem;
+    margin-top: 150px;
+  }
+  .p-section2-nutricion div p {
+    font-size: 1em;
+  }
+  .plan-carne-vegano h2 {
+    font-size: 2rem;
+  }
+  .div-mas-info button {
+    width: 180px;
+    height: 50px;
+  }
+  .div-mas-info button a {
+    font-size: 35px;
+  }
 }
 
-
-/* ACA COMIENZA LA MEDIA QUERY DE 320px */
-@media(max-width:320px){
-    
-}
+/*# sourceMappingURL=style.css.map */

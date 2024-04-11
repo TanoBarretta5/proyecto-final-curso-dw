@@ -1,0 +1,67 @@
+/* AQUI COMIENZA EL MAIN DE NOSOTROS */
+
+
+
+
+.nosotros-main {
+    background-image: url(../assets/img/PagNosotros/1c44b9a9297b6fad9057296490487cd5.jpg);
+    height: 51rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.h1-fitness-h2-salud {
+    display: flex;
+    padding-left: 90px;
+
+    h2 {
+    writing-mode: vertical-lr;
+    font-size: 1.4rem;
+    padding-top: 135px;
+    margin-left: 50px;
+    letter-spacing: 10px;
+    }
+
+    h1 {
+    font-size: 9rem;
+    text-shadow: 4px 4px 10px rgba(0, 201, 0, 0.586);
+    padding-top: 100px;
+    padding-left: 20px;
+
+    &:hover::after {
+        content: "💪🏻";
+        font-size: 60px;
+        margin-left: 10px;
+        }
+    }
+}
+
+.h2-salud {
+    transform: rotate(360deg);
+}
+
+.h2-entrena h2 {
+    font-size: 1.8rem;
+    letter-spacing: 25px;
+    padding-left: 150px;
+}
+
+.div-button-empezar button {
+    padding: 20px 40px;
+    background-color: green;
+    border-radius: 1rem;
+    border: 2px solid rgb(202, 255, 203);
+    box-shadow: 0.5rem 0.5rem 1rem rgb(202, 255, 203);
+    cursor: pointer;
+    margin-top: 250px;
+    margin-left: 300px;
+
+    &:hover {
+    background-color: rgb(0, 205, 10);
+    }
+}
+
+.button-empezar a {
+    font-size: 40px;
+    color: white;
+}

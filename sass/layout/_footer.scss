@@ -1,0 +1,34 @@
+/* AQUI COMIENZA EL FOOTER */
+footer {
+    display: flex;
+    background-color: $fondo-verde;
+    color: white;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .num-telefono {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .img-telefono {
+            height: 30px;
+        }
+    }
+}
+
+.logos-footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li a {
+        padding-right: 25px;
+
+        img {
+            height: 30px;
+        }
+    }
+}

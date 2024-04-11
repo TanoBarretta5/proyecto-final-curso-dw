@@ -1,0 +1,117 @@
+/** ACA COMIENZA EL MAIN DE TIENDA**/
+
+
+.main-tienda{
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 50px;
+    h1{
+        text-align: center;
+        padding:50px 0px;
+        font-size: 60px;
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        color: $escala4;
+    }
+}
+
+.section-principal-suplementos{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    img{
+        width: 50%;
+    }
+    .div-titulo-suplementos{
+        align-content: center;
+        width: 50%;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        h2{
+            font-size: 30px;
+            color: white;
+            text-transform: uppercase;
+            color: rgb(0, 108, 0);
+            align-content: center;
+            padding-bottom:50px;
+        }
+        p{
+            color: white;
+            font-size: 20px;
+            font-style:italic;
+            text-align: center;
+            padding: 0 50px;
+        }
+        
+    }
+}
+
+
+
+
+
+.suplementos-container{
+    display: grid ;
+    width: 100%;
+    grid-template-columns:repeat(4,300px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    .suplemento-caja{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        padding-bottom: 15px;
+        &:hover{
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.202);
+            border-radius: 20px;
+        }
+        img{
+            width:100%;
+            height: 100%;
+            padding-bottom: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transition: 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+    }
+}
+
+.div-animacion{
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.suplemento-caja:hover img{
+    transform:scale(1.1);
+}
+
+.contenido-producto{
+    text-align: center;
+    h2{
+        padding-top: 5px;
+    }
+    .calidad-premium{
+        margin: 3px 0;
+        font-size: 16px;
+    }
+    .precio{
+        margin-bottom: 10px;
+        color: $letras-verde;
+        font-size: 20px;
+    }
+    .comprar{
+        margin: 10px 0;
+        padding: 6px 20px;
+        background-color: $escala3;
+        color: #ffff;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+}

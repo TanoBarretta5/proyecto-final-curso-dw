@@ -1,0 +1,28 @@
+/***UTILITIES***/
+@import "./utilities/variables";
+@import "./utilities/mapas";
+@import "./utilities/mixins";
+
+
+/***BASE***/
+@import "./base/reset";
+@import "./base/fuentes";
+
+/***COMPONENTS***/
+@import "./components/bootstrap";
+
+/***LAYOUT***/
+@import "./layout/bodygeneral";
+@import "./layout/header";
+@import "./layout/index";
+@import "./layout/entrenamiento";
+@import "./layout/nutricion";
+@import "./layout/tienda";
+@import "./layout/planes";
+@import "./layout/contactanos";
+@import "./layout/footer";
+
+@import "./layout/responsive";
+
+
+

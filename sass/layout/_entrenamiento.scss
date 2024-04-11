@@ -1,0 +1,172 @@
+/* AQUI COMIENZA EL MAIN DE ENTRENAMIENTO */
+
+.entrenamiento-main {
+    width: 100%;
+}
+
+.h1-entrenamiento h1 {
+    text-align: center;
+    justify-content: center;
+    margin: 15px;
+    font-size: 100px;
+    text-shadow: 5px 5px 0 $letras-verde;
+}
+
+.h2-tu h2 {
+    color: $letras-verde;
+    text-shadow: 5px 5px 0 white;
+    font-size: 120px;
+    text-align: center;
+}
+
+.div-contenedor-entrenamiento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+
+    .section-entrenamiento {
+        @include flexcenter;
+        margin: 20px;
+    }
+}
+
+.titulo-secundario-entrenamiento {
+    font-size: 50px;
+    text-shadow: 4px 4px 0 $letras-verde;
+}
+
+.p-entrenamiento {
+    font-size: 16px;
+    margin: 15px;
+    text-shadow: 0px 0px 30px $letras-verde;
+}
+
+.div-pf-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 6rem;
+        text-shadow: 2px 2px 5px $letras-verde;
+        padding-top: 50px;
+    }
+    hr{
+        width: 200px;
+        border: 1px solid $fondo-verde;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+.div-contenedor-fotos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    .div-pf-fotos{
+        padding: 20px;
+        text-align: center;
+        img{
+            width: 300px;
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+}
+
+.div-btn-pf{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    .btn-pf{
+        text-align: center;
+        color: white;
+        background-color: rgb(0, 178, 0);
+        font-size: 30px;
+        width: 250px;
+        box-shadow: 2px 2px 5px rgb(255, 255, 255);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        
+    }
+}
+
+
+.section-galeria-entrenamiento {
+    background-color: rgba(4, 30, 0, 0.686);
+}
+
+.div-h2-galeria {
+    @include flexcenter;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+
+    h2 {
+        font-size: 4rem;
+        background-color: rgba(13, 255, 0, 0.703);
+        border-radius: 10px;
+        box-shadow: 4px 4px 20px rgb(232, 255, 220);
+        padding: 12px;
+        text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    }
+}
+
+.contenedor-galeria {
+    display: grid;
+    padding: 30px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 180px);
+    grid-template-areas: "img-galeria1 img-galeria1 img-galeria2 img-galeria3" "img-galeria1 img-galeria1 img-galeria2 img-galeria3" "img-galeria1 img-galeria1 img-galeria8 img-galeria8" "img-galeria5 img-galeria6 img-galeria8 img-galeria8" "img-galeria5 img-galeria6 img-galeria8 img-galeria8" "img-galeria4 img-galeria4 img-galeria8 img-galeria8" "img-galeria4 img-galeria4 img-galeria7 img-galeria7" "img-galeria4 img-galeria4 img-galeria7 img-galeria7";
+    gap: 5px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        object-fit: cover;
+    }
+}
+
+.img-galeria1 {
+    grid-area: img-galeria1;
+}
+
+.img-galeria2 {
+    grid-area: img-galeria2;
+}
+
+.img-galeria3 {
+    grid-area: img-galeria3;
+}
+
+.img-galeria4 {
+    grid-area: img-galeria4;
+}
+
+.img-galeria5 {
+    grid-area: img-galeria5;
+}
+
+.img-galeria6 {
+    grid-area: img-galeria6;
+}
+
+.img-galeria7 {
+    grid-area: img-galeria7;
+}
+
+.img-galeria8 {
+    grid-area: img-galeria8;
+}
