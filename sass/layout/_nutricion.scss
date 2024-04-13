@@ -83,3 +83,53 @@
         color: rgb(0, 255, 0);
     }
 }
+
+.section-opiniones{
+    
+    background: linear-gradient(rgb(255, 255, 255), rgb(155, 155, 155));
+    .titulo-pacientes{
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        padding: 5rem 0 1rem 0;
+        color: $escala4;
+        
+    }
+}
+
+.caja-contenedor-pacientes{
+    @include flexcenter;
+    flex-wrap: wrap;
+    .caja-pacientes{
+        background:white ;
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
+        color: black;
+        position: relative;
+        border: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 8px 1rem rgba(0, 0, 0 , .1);
+        border-radius: 8px;
+        flex: 1 1 30rem;
+        .usuario-paciente{
+            img{
+                border-radius: 50%;
+                object-fit: cover;
+                height: 7rem;
+                width: 8rem;
+                margin-top: 1rem;
+                border: 1px solid rgb(255, 183, 0) ;
+            }
+            h3{
+                color: rgb(255, 183, 0);
+                font-size: 2rem;
+            }
+            .comentarios-paciente{
+                color: #666;
+                
+                font-size: 1rem;
+            }
+        }
+    }
+}
+

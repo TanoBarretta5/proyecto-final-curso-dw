@@ -146,7 +146,7 @@ nav #toggle, nav label {
 .h1-entrenamiento h1 {
   text-align: center;
   justify-content: center;
-  margin: 15px;
+  margin: 0px;
   font-size: 100px;
   text-shadow: 5px 5px 0 green;
 }
@@ -241,7 +241,7 @@ nav #toggle, nav label {
 }
 
 .section-galeria-entrenamiento {
-  background-color: rgba(4, 30, 0, 0.686);
+  background-color: rgba(4, 81, 0, 0.78);
 }
 
 .div-h2-galeria {
@@ -268,13 +268,14 @@ nav #toggle, nav label {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 180px);
   grid-template-areas: "img-galeria1 img-galeria1 img-galeria2 img-galeria3" "img-galeria1 img-galeria1 img-galeria2 img-galeria3" "img-galeria1 img-galeria1 img-galeria8 img-galeria8" "img-galeria5 img-galeria6 img-galeria8 img-galeria8" "img-galeria5 img-galeria6 img-galeria8 img-galeria8" "img-galeria4 img-galeria4 img-galeria8 img-galeria8" "img-galeria4 img-galeria4 img-galeria7 img-galeria7" "img-galeria4 img-galeria4 img-galeria7 img-galeria7";
-  gap: 5px;
+  gap: 0px;
 }
 .contenedor-galeria img {
   width: 100%;
   height: 100%;
   background-position: center;
   object-fit: cover;
+  border: 1px rgb(191, 255, 170) solid;
 }
 
 .img-galeria1 {
@@ -388,6 +389,52 @@ nav #toggle, nav label {
   color: rgb(0, 255, 0);
 }
 
+.section-opiniones {
+  background: linear-gradient(rgb(255, 255, 255), rgb(155, 155, 155));
+}
+.section-opiniones .titulo-pacientes {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding: 5rem 0 1rem 0;
+  color: #044502;
+}
+
+.caja-contenedor-pacientes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.caja-contenedor-pacientes .caja-pacientes {
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: black;
+  position: relative;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex: 1 1 30rem;
+}
+.caja-contenedor-pacientes .caja-pacientes .usuario-paciente img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 7rem;
+  width: 8rem;
+  margin-top: 1rem;
+  border: 1px solid rgb(255, 183, 0);
+}
+.caja-contenedor-pacientes .caja-pacientes .usuario-paciente h3 {
+  color: rgb(255, 183, 0);
+  font-size: 2rem;
+}
+.caja-contenedor-pacientes .caja-pacientes .usuario-paciente .comentarios-paciente {
+  color: #666;
+  font-size: 1rem;
+}
+
 /** ACA COMIENZA EL MAIN DE TIENDA**/
 .main-tienda {
   background-color: rgb(240, 240, 240);
@@ -419,7 +466,7 @@ nav #toggle, nav label {
   padding: 10px 10px 10px 10px;
   text-align: center;
 }
-.section-principal-suplementos .div-titulo-suplementos h2 {
+.section-principal-suplementos .div-titulo-suplementos h1 {
   font-size: 30px;
   color: white;
   text-transform: uppercase;
@@ -433,6 +480,15 @@ nav #toggle, nav label {
   font-style: italic;
   text-align: center;
   padding: 0 50px;
+}
+
+.h2-suplementos-dep {
+  text-align: center;
+  padding: 50px 0px;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  color: #044502;
 }
 
 .suplementos-container {
@@ -773,7 +829,7 @@ footer .num-telefono .img-telefono {
   .suplementos-container {
     grid-template-columns: repeat(2, 300px);
   }
-  .main-tienda h1 {
+  .main-tienda .h2-suplementos-dep {
     font-size: 40px;
   }
 }
@@ -891,7 +947,7 @@ footer .num-telefono .img-telefono {
     font-size: 40px;
   }
   /**ACA COMIENZA LA MEDIA PARA TIENDA**/
-  .section-principal-suplementos .div-titulo-suplementos h2 {
+  .section-principal-suplementos .div-titulo-suplementos h1 {
     font-size: 20px;
   }
   .section-principal-suplementos .div-titulo-suplementos p {
@@ -1019,7 +1075,7 @@ footer .num-telefono .img-telefono {
     width: 100%;
     padding: 10px 10px 50px 10px;
   }
-  .section-principal-suplementos .div-titulo-suplementos h2 {
+  .section-principal-suplementos .div-titulo-suplementos h1 {
     padding-top: 20px;
   }
   .section-principal-suplementos .div-titulo-suplementos p {
