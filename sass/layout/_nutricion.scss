@@ -112,13 +112,16 @@
         border-radius: 8px;
         flex: 1 1 30rem;
         .usuario-paciente{
+            .stars{
+                padding: 5px;
+            }
             img{
                 border-radius: 50%;
                 object-fit: cover;
                 height: 7rem;
                 width: 8rem;
                 margin-top: 1rem;
-                border: 1px solid rgb(255, 183, 0) ;
+                box-shadow: 0 0 10px 0  rgb(255, 183, 0);
             }
             h3{
                 color: rgb(255, 183, 0);
@@ -126,8 +129,11 @@
             }
             .comentarios-paciente{
                 color: #666;
-                
                 font-size: 1rem;
+                p{
+                    text-align: justify;
+                    box-sizing: border-box;
+                }
             }
         }
     }

@@ -418,13 +418,16 @@ nav #toggle, nav label {
   border-radius: 8px;
   flex: 1 1 30rem;
 }
+.caja-contenedor-pacientes .caja-pacientes .usuario-paciente .stars {
+  padding: 5px;
+}
 .caja-contenedor-pacientes .caja-pacientes .usuario-paciente img {
   border-radius: 50%;
   object-fit: cover;
   height: 7rem;
   width: 8rem;
   margin-top: 1rem;
-  border: 1px solid rgb(255, 183, 0);
+  box-shadow: 0 0 10px 0 rgb(255, 183, 0);
 }
 .caja-contenedor-pacientes .caja-pacientes .usuario-paciente h3 {
   color: rgb(255, 183, 0);
@@ -433,6 +436,10 @@ nav #toggle, nav label {
 .caja-contenedor-pacientes .caja-pacientes .usuario-paciente .comentarios-paciente {
   color: #666;
   font-size: 1rem;
+}
+.caja-contenedor-pacientes .caja-pacientes .usuario-paciente .comentarios-paciente p {
+  text-align: justify;
+  box-sizing: border-box;
 }
 
 /** ACA COMIENZA EL MAIN DE TIENDA**/
@@ -856,7 +863,8 @@ footer .num-telefono .img-telefono {
   }
   nav #toggle:checked ~ .menu {
     height: 100%;
-    background-color: rgba(0, 182, 24, 0.697);
+    background: linear-gradient(#0b4600, rgb(0, 174, 0));
+    transition: 0.7s;
   }
   /* ACA COMIENZA LA PAG NOSOTROS */
   .h1-fitness-h2-salud {
