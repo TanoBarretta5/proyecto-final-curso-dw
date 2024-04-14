@@ -6,14 +6,6 @@
     color: rgb(0, 0, 0);
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 50px;
-    h1{
-        text-align: center;
-        padding:50px 0px;
-        font-size: 60px;
-        text-transform: uppercase;
-        font-family: 'Courier New', Courier, monospace;
-        color: $escala4;
-    }
 }
 
 .section-principal-suplementos{
@@ -27,22 +19,22 @@
     .div-titulo-suplementos{
         align-content: center;
         width: 50%;
-        padding: 10px 10px 10px 10px;
+        padding: 10px 0px 10px 10px;
         text-align: center;
         h1{
             font-size: 30px;
             color: white;
             text-transform: uppercase;
             color: rgb(0, 108, 0);
-            align-content: center;
             padding-bottom:50px;
+            text-align: center;
         }
         p{
             color: white;
-            font-size: 20px;
+            font-size: 16px;
             font-style:italic;
             text-align: center;
-            padding: 0 50px;
+            margin-bottom: 10px;
         }
         
     }
