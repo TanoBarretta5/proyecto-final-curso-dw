@@ -1,15 +1,9 @@
 /* AQUI COMIENZA EL BODY DE PLANES */
-.planes-main {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-}
+
 
 .section-elegi-planes {
-    width: 34%;
     text-align: center;
+    
 }
 
 .h1-nuestros-precios {
@@ -32,6 +26,8 @@
         letter-spacing: 1px;
         text-shadow: 2px 2px 4px $letras-verde;
         margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     h3 {
@@ -43,6 +39,14 @@
 .card-planes {
     background-color: green;
     margin-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    margin: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px white;
+    
 
     &:hover {
         background-color: rgb(0, 188, 0);
@@ -50,32 +54,37 @@
 }
 
 .section-personalizados {
-    width: 32%;
+    display: flex;
     height: 100%;
     margin-bottom: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .tituloyprecios {
-    font-size: 1.6rem;
-    margin-top: 20px;
-
+    font-size: 1rem;
+    margin-top: 10px;
+    h2{
+        text-transform: uppercase;
+    }
     h3 {
         background-color: white;
         margin-top: 20px;
         color: black;
+        text-transform: uppercase;
     }
 }
 
 .personalizados ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
 
     li {
-        font-size: 1.6em;
-        margin-left: 50px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        font-size: 1em;
+        padding-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
         &::marker {
             content: "💪🏻";
@@ -84,11 +93,11 @@
 }
 
 .button-contactanos button {
-    width: 15rem;
-    height: 4rem;
+    width: 13rem;
+    height: 3rem;
     background-color: black;
     margin: 5px;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     border: 2px solid rgb(202, 255, 203);
     cursor: pointer;
     margin-bottom: 30px;

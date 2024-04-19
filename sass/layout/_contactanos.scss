@@ -41,8 +41,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(0, 255, 0);
     text-align: center;
-    width: 400px;
-    height: 480px;
+
 }
 
 .form-title {
@@ -104,6 +103,15 @@
     left: 5px;
     transform: translateY(10px);
     transition: transform 0.5s, var(--color) 0.3s;
+}
+
+.label-terminos{
+    color: rgb(8, 8, 8);
+}
+
+.link-terminos{
+    color: rgb(0, 138, 7);
+    text-decoration:underline;
 }
 
 .form-submit {

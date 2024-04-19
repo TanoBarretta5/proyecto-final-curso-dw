@@ -1,21 +1,5 @@
 /* ACA COMIENZA LA MEDIA DE 1440 */
-@media (max-width: 1440px) {
-    /* ACA COMIENZA LA PAG DE PLANES */
-
-    .h1-nuestros-precios,
-    .h2-elige-tu-plan{
-        font-size: 1.7rem;
-    }
-
-    .explicacion-planes {
-        h3 {
-            font-size: 1.8em;
-        }
-
-        p {
-            font-size: 30px;
-        }
-    }
+@media (max-width: 1440px) {    
 
 
 /* ACA COMIENZA LA PAG DE TIENDA */
@@ -190,30 +174,7 @@
         }
     }
 
-
-    /* ACA COMIENZA LA MEDIA PARA PLANES */
-
-    .planes-main {
-        display: grid;
-        height: 100%;
-    }
-
-    .section-elegi-planes {
-        width: auto;
-    }
-
-    .explicacion-planes p {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .section-personalizados {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 50px;
-        padding-right: 120px;
-        padding-left: 120px;
-    }
+    
 
     /* ACA COMIENZA LA PAG DE CONTACTANOS */
 
@@ -222,7 +183,8 @@
     }
 
     .div-mapa-form {
-        display: grid;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .div-contenedor-iframe {
@@ -230,6 +192,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding-top: 100px;
 
         iframe {
             width: 400px;
@@ -237,7 +200,54 @@
             padding-bottom: 40px;
         }
     }
+
+    /**ACA COMIENZA LA PAG DE PROFESORES**/
+    .h1-profesores {
+        font-size: 3rem;
+        text-shadow: 2px 2px 5px $letras-verde;
+        padding-top: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .section-profes{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 0;
+        align-items: center;
+        .scroll{
+            margin-right: 0px;
+            position:relative;
+            top: 0vh;
+            bottom: 0px;
+            text-align: center;
+            h2{
+                font-size: 30px;
+                text-transform: uppercase;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            ul{
+                margin-bottom: 30px;
+                li{
+                    padding: 20px 0 0 0;
+                    text-transform: uppercase;
+                    list-style-position: inside;
+                    font-size: 14px;
+                    &::marker {
+                        content: "💪🏻";
+                    }
+                }
+            }
+            a{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
 }
+
+
 
 /* ACA COMIENZA LA MEDIA QUERY DE 768px */
 @media (max-width: 768px) {
@@ -363,13 +373,9 @@
     /* ACA COMIENZA LA PAG DE PLANES */
 
     .explicacion-planes p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .section-personalizados {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
 
     /* ACA COMIENZA PAG CONTACTANOS */
 
@@ -447,7 +453,7 @@
 
     .h1-nuestros-precios {
         font-size: 1rem;
-        width: auto;
+        
     }
 
     .h2-elige-tu-plan {
@@ -464,19 +470,11 @@
         }
     }
 
-    .section-personalizados {
-        padding-right: 10px;
-        padding-left: 10px;
+    .card-planes {
+        padding-right: 22px;
+        padding-left: 22px;
     }
 
-    .tituloyprecios {
-        font-size: 1.6rem;
-        margin-top: 20px;
-    }
-
-    .personalizados ul li {
-        font-size: 1.6em;
-    }
 
     .button-contactanos button {
         width: 10rem;
@@ -507,9 +505,34 @@
         border-radius: 10px;
         box-shadow: 5px 5px 5px rgb(0, 255, 0);
         text-align: center;
-        width: 290px;
-        height: 450px;
+        width: 280px;
     }
+
+
+    /**ACA COMIENZA LA PAG PROFESORES**/
+    .h1-profesores {
+        font-size: 2rem;
+        text-shadow: 2px 2px 5px $letras-verde;
+        padding-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-profes{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 20px;
+        align-items: center;
+        img{
+            width: 280px;
+            height: 300px;
+            border-radius: 10px;
+            
+            align-items: center;
+        }
+    }
+    
+
 }
 
 /* ACA COMIENZA LA MEDIA QUERY DE 425px */

@@ -214,7 +214,7 @@ nav #toggle, nav label {
   text-align: center;
 }
 .div-contenedor-fotos .div-pf-fotos img {
-  width: 300px;
+  width: 280px;
   height: 400px;
   align-items: center;
   justify-content: center;
@@ -555,16 +555,7 @@ nav #toggle, nav label {
 }
 
 /* AQUI COMIENZA EL BODY DE PLANES */
-.planes-main {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  height: 100%;
-  width: 100%;
-}
-
 .section-elegi-planes {
-  width: 34%;
   text-align: center;
 }
 
@@ -587,6 +578,8 @@ nav #toggle, nav label {
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px green;
   margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .explicacion-planes h3 {
   font-size: 2.3em;
@@ -596,48 +589,60 @@ nav #toggle, nav label {
 .card-planes {
   background-color: green;
   margin-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  margin: 20px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px white;
 }
 .card-planes:hover {
   background-color: rgb(0, 188, 0);
 }
 
 .section-personalizados {
-  width: 32%;
+  display: flex;
   height: 100%;
   margin-bottom: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .tituloyprecios {
-  font-size: 1.6rem;
-  margin-top: 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.tituloyprecios h2 {
+  text-transform: uppercase;
 }
 .tituloyprecios h3 {
   background-color: white;
   margin-top: 20px;
   color: black;
+  text-transform: uppercase;
 }
 
 .personalizados ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .personalizados ul li {
-  font-size: 1.6em;
-  margin-left: 50px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  font-size: 1em;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .personalizados ul li::marker {
   content: "💪🏻";
 }
 
 .button-contactanos button {
-  width: 15rem;
-  height: 4rem;
+  width: 13rem;
+  height: 3rem;
   background-color: black;
   margin: 5px;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   border: 2px solid rgb(202, 255, 203);
   cursor: pointer;
   margin-bottom: 30px;
@@ -692,8 +697,6 @@ nav #toggle, nav label {
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(0, 255, 0);
   text-align: center;
-  width: 400px;
-  height: 480px;
 }
 
 .form-title {
@@ -754,6 +757,15 @@ nav #toggle, nav label {
   transition: transform 0.5s, var(--color) 0.3s;
 }
 
+.label-terminos {
+  color: rgb(8, 8, 8);
+}
+
+.link-terminos {
+  color: rgb(0, 138, 7);
+  text-decoration: underline;
+}
+
 .form-submit {
   background: green;
   color: white;
@@ -811,19 +823,101 @@ footer .num-telefono .img-telefono {
   height: 30px;
 }
 
+/**ACA COMIENZA LA PAGINA DE TERMINOS**/
+.main-terminos {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: azure;
+}
+.main-terminos .h1terminos, .main-terminos .h2terminos {
+  color: #014200;
+  font-size: 25px;
+}
+.main-terminos .h2terminos {
+  margin-top: 30px;
+}
+.main-terminos .pterminos {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.h1-profesores {
+  font-size: 5rem;
+  text-shadow: 2px 2px 5px green;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-profes {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40px;
+}
+.section-profes .scroll {
+  margin-right: 50px;
+  position: sticky;
+  top: 40vh;
+  bottom: 40px;
+  height: fit-content;
+}
+.section-profes .scroll h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.section-profes .scroll h2 span {
+  color: #044502;
+}
+.section-profes .scroll ul {
+  margin-bottom: 30px;
+}
+.section-profes .scroll ul li {
+  padding: 20px 0 0 0;
+  text-transform: uppercase;
+  list-style-position: inside;
+}
+.section-profes .scroll ul li::marker {
+  content: "💪🏻";
+}
+.section-profes .scroll a {
+  padding: 10px 20px;
+  background-color: #044502;
+  color: aliceblue;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0px rgb(255, 255, 255);
+}
+
+.contenedor-profes {
+  display: flex;
+  margin: 30px 20px;
+}
+.contenedor-profes img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+}
+.contenedor-profes .contenido-profesores {
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+.contenedor-profes .contenido-profesores h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #044502;
+}
+.contenedor-profes .contenido-profesores p {
+  max-width: 500px;
+}
+
 /* ACA COMIENZA LA MEDIA DE 1440 */
 @media (max-width: 1440px) {
-  /* ACA COMIENZA LA PAG DE PLANES */
-  .h1-nuestros-precios,
-  .h2-elige-tu-plan {
-    font-size: 1.7rem;
-  }
-  .explicacion-planes h3 {
-    font-size: 1.8em;
-  }
-  .explicacion-planes p {
-    font-size: 30px;
-  }
   /* ACA COMIENZA LA PAG DE TIENDA */
   .suplementos-container {
     grid-template-columns: repeat(2, 300px);
@@ -953,42 +1047,67 @@ footer .num-telefono .img-telefono {
   .section-principal-suplementos .div-titulo-suplementos p {
     font-size: 16px;
   }
-  /* ACA COMIENZA LA MEDIA PARA PLANES */
-  .planes-main {
-    display: grid;
-    height: 100%;
-  }
-  .section-elegi-planes {
-    width: auto;
-  }
-  .explicacion-planes p {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .section-personalizados {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 50px;
-    padding-right: 120px;
-    padding-left: 120px;
-  }
   /* ACA COMIENZA LA PAG DE CONTACTANOS */
   .h1-contactanos h1 {
     font-size: 2.2em;
   }
   .div-mapa-form {
-    display: grid;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .div-contenedor-iframe {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 100px;
   }
   .div-contenedor-iframe iframe {
     width: 400px;
     height: 400px;
     padding-bottom: 40px;
+  }
+  /**ACA COMIENZA LA PAG DE PROFESORES**/
+  .h1-profesores {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px green;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .section-profes {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+    align-items: center;
+  }
+  .section-profes .scroll {
+    margin-right: 0px;
+    position: relative;
+    top: 0vh;
+    bottom: 0px;
+    text-align: center;
+  }
+  .section-profes .scroll h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .section-profes .scroll ul {
+    margin-bottom: 30px;
+  }
+  .section-profes .scroll ul li {
+    padding: 20px 0 0 0;
+    text-transform: uppercase;
+    list-style-position: inside;
+    font-size: 14px;
+  }
+  .section-profes .scroll ul li::marker {
+    content: "💪🏻";
+  }
+  .section-profes .scroll a {
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 /* ACA COMIENZA LA MEDIA QUERY DE 768px */
@@ -1087,11 +1206,7 @@ footer .num-telefono .img-telefono {
   }
   /* ACA COMIENZA LA PAG DE PLANES */
   .explicacion-planes p {
-    font-size: 20px;
-  }
-  .section-personalizados {
-    padding-right: 60px;
-    padding-left: 60px;
+    font-size: 18px;
   }
   /* ACA COMIENZA PAG CONTACTANOS */
   .contactanos-main {
@@ -1150,7 +1265,6 @@ footer .num-telefono .img-telefono {
   /* ACA COMIENZA LA PAG DE PLANES */
   .h1-nuestros-precios {
     font-size: 1rem;
-    width: auto;
   }
   .h2-elige-tu-plan {
     font-size: 1rem;
@@ -1161,16 +1275,9 @@ footer .num-telefono .img-telefono {
   .explicacion-planes p {
     font-size: 15px;
   }
-  .section-personalizados {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .tituloyprecios {
-    font-size: 1.6rem;
-    margin-top: 20px;
-  }
-  .personalizados ul li {
-    font-size: 1.6em;
+  .card-planes {
+    padding-right: 22px;
+    padding-left: 22px;
   }
   .button-contactanos button {
     width: 10rem;
@@ -1196,8 +1303,27 @@ footer .num-telefono .img-telefono {
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(0, 255, 0);
     text-align: center;
-    width: 290px;
-    height: 450px;
+    width: 280px;
+  }
+  /**ACA COMIENZA LA PAG PROFESORES**/
+  .h1-profesores {
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px green;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contenedor-profes {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+    align-items: center;
+  }
+  .contenedor-profes img {
+    width: 280px;
+    height: 300px;
+    border-radius: 10px;
+    align-items: center;
   }
 }
 /* ACA COMIENZA LA MEDIA QUERY DE 425px */
