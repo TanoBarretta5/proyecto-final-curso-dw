@@ -487,6 +487,7 @@ p::selection {
 }
 .section-principal-suplementos img {
   width: 50%;
+  height: 100%;
 }
 .section-principal-suplementos .div-titulo-suplementos {
   justify-content: center;
