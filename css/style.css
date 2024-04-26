@@ -54,36 +54,43 @@ p::selection {
 .nav-wraper nav .logo-nav {
   width: 100px;
   padding: 8px;
+  border-radius: 50%;
 }
 
 .menu ul {
   display: flex;
   list-style: none;
-  gap: 12px;
 }
 .menu ul li a {
   color: rgb(255, 255, 255);
-  margin-right: 50px;
+  padding: 10px 25px;
+  margin: 0 3px;
   font-size: 20px;
+  text-align: center;
+  border-radius: 0;
+  transition: background-color 0.24s, border-radius 0.2s;
 }
 .menu ul li a:hover {
-  color: rgb(136, 255, 152);
+  background-color: rgba(19, 125, 0, 0.282);
+  border-radius: 20px;
+  outline: 2px solid rgba(19, 125, 0, 0.282);
 }
 .menu ul li .parado-en-pag {
   color: rgb(30, 255, 0);
   text-shadow: 2px 2px 2px black;
 }
 
-nav #toggle, nav label {
+#toggle, nav label {
   display: none;
+  height: 100%;
 }
 
 /* AQUI COMIENZA EL MAIN DE NOSOTROS */
 .nosotros-main {
   background-image: url(../assets/img/PagNosotros/1c44b9a9297b6fad9057296490487cd5.jpg);
-  height: 51rem;
-  background-repeat: no-repeat;
   background-size: 100% 100%;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
 .h1-fitness-h2-salud {
@@ -119,18 +126,21 @@ nav #toggle, nav label {
   padding-left: 150px;
 }
 
-.div-button-empezar button {
-  padding: 20px 40px;
+.button-empezar {
+  padding: 16px 32px;
+  margin-bottom: 100px;
+  border: 1px solid white;
   background-color: green;
-  border-radius: 1rem;
-  border: 2px solid rgb(202, 255, 203);
-  box-shadow: 0.5rem 0.5rem 1rem rgb(202, 255, 203);
+  border-radius: 12px;
   cursor: pointer;
   margin-top: 250px;
   margin-left: 300px;
+  box-shadow: 0 0 20px #79F679;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.div-button-empezar button:hover {
+.button-empezar:hover {
   background-color: rgb(0, 205, 10);
+  transition: 0.3s;
 }
 
 .button-empezar a {
@@ -224,20 +234,38 @@ nav #toggle, nav label {
   font-size: 25px;
 }
 
-.div-btn-pf {
+.div-btn-contenedor {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 70px;
+  margin: 50px 0;
 }
-.div-btn-pf .btn-pf {
-  text-align: center;
-  color: white;
-  background-color: rgb(0, 178, 0);
-  font-size: 30px;
-  width: 250px;
-  box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  font-family: Georgia, "Times New Roman", Times, serif;
+.div-btn-contenedor .div-btn-pf {
+  border: 0;
+  background-image: linear-gradient(150deg, rgb(0, 54, 0), rgb(0, 179, 0), rgb(22, 255, 14));
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.div-btn-contenedor .div-btn-pf:active {
+  transform: scale(0.9);
+}
+.div-btn-contenedor .div-btn-pf:hover .btn-pf {
+  background: none;
+}
+.div-btn-contenedor .div-btn-pf .btn-pf {
+  background-color: #fff;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: black;
+}
+
+.div-btn-pf:hover .btn-pf {
+  background: none;
 }
 
 .section-galeria-entrenamiento {
@@ -383,6 +411,7 @@ nav #toggle, nav label {
   width: 300px;
   height: 80px;
   margin: 20px;
+  border-radius: 10px;
 }
 .div-mas-info button a {
   font-size: 50px;
@@ -460,10 +489,13 @@ nav #toggle, nav label {
   width: 50%;
 }
 .section-principal-suplementos .div-titulo-suplementos {
-  align-content: center;
+  justify-content: center;
   width: 50%;
   padding: 10px 0px 10px 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section-principal-suplementos .div-titulo-suplementos h1 {
   font-size: 30px;
@@ -471,14 +503,13 @@ nav #toggle, nav label {
   text-transform: uppercase;
   color: rgb(0, 108, 0);
   padding-bottom: 50px;
-  text-align: center;
 }
 .section-principal-suplementos .div-titulo-suplementos p {
   color: white;
   font-size: 16px;
   font-style: italic;
-  text-align: center;
   margin-bottom: 10px;
+  max-width: 600px;
 }
 
 .h2-suplementos-dep {
@@ -510,6 +541,7 @@ nav #toggle, nav label {
 .suplementos-container .suplemento-caja:hover {
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.202);
   border-radius: 20px;
+  transition: 0.5s;
 }
 .suplementos-container .suplemento-caja img {
   width: 100%;
@@ -572,14 +604,12 @@ nav #toggle, nav label {
 }
 
 .explicacion-planes p {
-  padding-right: 50px;
-  padding-left: 50px;
+  margin: 0 100px;
   font-size: 32px;
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px green;
   margin-top: 10px;
   margin-bottom: 20px;
-  text-align: center;
 }
 .explicacion-planes h3 {
   font-size: 2.3em;
@@ -599,6 +629,7 @@ nav #toggle, nav label {
 }
 .card-planes:hover {
   background-color: rgb(0, 188, 0);
+  transition: 0.8s;
 }
 
 .section-personalizados {
@@ -646,6 +677,7 @@ nav #toggle, nav label {
   border: 2px solid rgb(202, 255, 203);
   cursor: pointer;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 .button-contactanos button a {
   color: white;
@@ -857,10 +889,10 @@ footer .num-telefono .img-telefono {
   margin-left: 40px;
 }
 .section-profes .scroll {
-  margin-right: 50px;
+  margin: 50px 50px 50px 0;
   position: sticky;
-  top: 40vh;
-  bottom: 40px;
+  top: 150px;
+  bottom: 100px;
   height: fit-content;
 }
 .section-profes .scroll h2 {
@@ -914,6 +946,16 @@ footer .num-telefono .img-telefono {
 }
 .contenedor-profes .contenido-profesores p {
   max-width: 500px;
+  margin: 10px;
+}
+
+.h1-profesores {
+  font-size: 5rem;
+  text-shadow: 2px 2px 5px green;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 /* ACA COMIENZA LA MEDIA DE 1440 */
@@ -929,16 +971,20 @@ footer .num-telefono .img-telefono {
 /* ACA COMIENZA LA MEDIA 1024 */
 @media (max-width: 1024px) {
   /* ACA COMIENZA EL HEADER EN 1024*/
+  .menu ul li {
+    margin: 4px 0;
+  }
   .menu ul li a {
     color: rgb(255, 255, 255);
-    margin-right: 0px;
+    margin: 20px 0px;
   }
   nav .menu {
     width: 100%;
     height: 0;
     overflow: hidden;
+    background-image: linear-gradient(to bottom, rgb(7, 73, 7), rgb(0, 108, 0), rgb(0, 152, 0));
   }
-  nav div ul {
+  nav ul {
     flex-direction: column;
     align-items: center;
     padding: 8px 0;
@@ -948,9 +994,8 @@ footer .num-telefono .img-telefono {
     cursor: pointer;
   }
   nav #toggle:checked ~ .menu {
-    height: 100%;
-    background: linear-gradient(#0b4600, rgb(0, 174, 0));
-    transition: 0.7s;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    height: 230px;
   }
   /* ACA COMIENZA LA PAG NOSOTROS */
   .h1-fitness-h2-salud {
@@ -968,7 +1013,7 @@ footer .num-telefono .img-telefono {
     letter-spacing: 10px;
     padding-left: 120px;
   }
-  .div-button-empezar button {
+  .button-empezar {
     padding: 20px 40px;
     margin-top: 250px;
     margin-left: 100px;
@@ -1045,7 +1090,7 @@ footer .num-telefono .img-telefono {
     font-size: 20px;
   }
   .section-principal-suplementos .div-titulo-suplementos p {
-    font-size: 16px;
+    font-size: 14px;
   }
   /* ACA COMIENZA LA PAG DE CONTACTANOS */
   .h1-contactanos h1 {
@@ -1207,6 +1252,7 @@ footer .num-telefono .img-telefono {
   /* ACA COMIENZA LA PAG DE PLANES */
   .explicacion-planes p {
     font-size: 18px;
+    margin: 0 20px;
   }
   /* ACA COMIENZA PAG CONTACTANOS */
   .contactanos-main {
@@ -1227,9 +1273,6 @@ footer .num-telefono .img-telefono {
     font-size: 20px;
   }
   /* ACA COMIENZA LA PAG  NOSOTROS */
-  .nosotros-main {
-    height: 38rem;
-  }
   .h1-fitness-h2-salud h1 {
     font-size: 4rem;
     padding-left: 10px;
@@ -1329,9 +1372,6 @@ footer .num-telefono .img-telefono {
 /* ACA COMIENZA LA MEDIA QUERY DE 425px */
 @media (max-width: 425px) {
   /* ACA COMIENZA LA PAG NOSOTROS */
-  .nosotros-main {
-    height: 30rem;
-  }
   .h1-fitness-h2-salud h1 {
     font-size: 2.5rem;
     padding-left: 10px;
@@ -1347,7 +1387,7 @@ footer .num-telefono .img-telefono {
     letter-spacing: 5px;
     padding-left: 85px;
   }
-  .div-button-empezar button {
+  .button-empezar {
     padding: 15px 30px;
     margin-top: 150px;
     margin-left: 50px;

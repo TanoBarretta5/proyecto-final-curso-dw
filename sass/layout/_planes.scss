@@ -3,7 +3,6 @@
 
 .section-elegi-planes {
     text-align: center;
-    
 }
 
 .h1-nuestros-precios {
@@ -20,14 +19,12 @@
 
 .explicacion-planes {
     p {
-        padding-right: 50px;
-        padding-left: 50px;
+        margin: 0 100px;
         font-size: 32px;
         letter-spacing: 1px;
         text-shadow: 2px 2px 4px $letras-verde;
         margin-top: 10px;
         margin-bottom: 20px;
-        text-align: center;
     }
 
     h3 {
@@ -50,6 +47,7 @@
 
     &:hover {
         background-color: rgb(0, 188, 0);
+        transition: .8s;
     }
 }
 
@@ -101,7 +99,7 @@
     border: 2px solid rgb(202, 255, 203);
     cursor: pointer;
     margin-bottom: 30px;
-
+    border-radius: 10px;
     a {
         color: white;
         text-shadow: 3px 3px 10px $letras-verde;
